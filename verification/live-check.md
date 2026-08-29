@@ -7,21 +7,26 @@
 ## Published artifact
 - Repo: `https://github.com/hakvision/osaka-kyoto-food-map`
 - Live URL: `https://hakvision.github.io/osaka-kyoto-food-map/`
-- Verified commit: `411f636ce1e5f687a82a5384712b715503008738`
+- Verified commit: `c6b2ae7ce210f36894a2e408b3294e56e2f10d9e`
 
 ## Verified with real tool output
-- Public URL returned HTTP 200 after Pages propagation.
+- Public URL returned HTTP 200.
 - Page title loads as `Osaka Kyoto Food Map`
 - Header visible: `오사카 · 교토 맛집맵`
-- Leaflet map renders on the live site
-- Zoom buttons render: `2`
-- Map tiles detected on the live site: `12`
-- 35 places appear in the list
-- Detail sheet opens for a card on the live site
-- Detail links present:
-  - Google Maps search
-  - walking directions
-  - source URL when available
+- Google Maps API loaded successfully on local/live checks: `googleReady=true`
+- Live map region exposes `지도`
+- Live site markers detected:
+  - 맛집 마커: `35`
+  - 주요 기준점 마커: `9`
+- 주요 기준점 라벨 노출 확인:
+  - `난바역`
+  - `오사카역`
+  - `교토역`
+- 상세 시트 열림 확인
+- 상세 액션 확인:
+  - `Google Maps에서 열기`
+  - `도보 경로`
+  - `좌표 참고 출처`
 - Filter test on live site:
   - Kyoto filter => `3` places
 - Dataset status:
@@ -32,4 +37,5 @@
 - Layout is mobile-first and uses stacked controls below 920px.
 - Buttons and inputs are touch-sized.
 - Detail view opens as a bottom sheet.
-- The live browser render showed readable controls and no visible overlap in the main view.
+- 주요 기준점 라벨을 지도 위에 직접 띄워 난바역/오사카역/교토역 같은 기준 시설이 더 잘 보이게 했다.
+- Google basemap language is requested with `language=ko&region=KR`.
