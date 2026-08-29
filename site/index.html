@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Osaka Kyoto Food Map</title>
   <meta name="description" content="오사카/교토 맛집 메모를 모바일 지도 앱으로 정리한 개인용 가이드">
-  <link rel="stylesheet" href="./styles.css?v=menu-drawer-1">
+  <link rel="stylesheet" href="./styles.css?v=menu-category-1">
 </head>
 <body>
   <div class="app-shell">
@@ -49,14 +49,14 @@
           </select>
         </label>
         <label>
-          <span>음식</span>
+          <span>카테고리</span>
           <select id="cuisineFilter">
             <option value="all">전체</option>
           </select>
         </label>
         <label class="wide-field">
           <span>검색</span>
-          <input id="searchInput" type="search" placeholder="가게명, 지역, 음식 검색">
+          <input id="searchInput" type="search" placeholder="가게명, 지역, 카테고리 검색">
         </label>
       </div>
     </section>
@@ -82,6 +82,7 @@
         <button class="panel-close" type="button" data-close-panel="legendPanel">닫기</button>
       </div>
       <p>핀 색상: <b>정확 위치</b> · <b>대략 위치</b> · <b>폐업/불명</b></p>
+      <p>장소 목록은 <b>요리 메뉴 카테고리별</b>로 묶어서 보여줌</p>
       <p>기준점: <b>난바역</b> · <b>오사카역</b> · <b>텐노지역</b> · <b>교토역</b> · <b>기온</b></p>
     </section>
 
@@ -106,6 +107,6 @@
     </article>
   </template>
 
-  <script src="./app.js?v=user-curation-2" defer></script>
+  <script src="./app.js?v=menu-category-1" defer></script>
 </body>
 </html>

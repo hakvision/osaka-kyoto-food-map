@@ -69,7 +69,7 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     closeDrawerPanelAndDetail({ keepDetail: false });
   });
 
-  const res = await fetch('./data/places.json?v=user-curation-2');
+  const res = await fetch('./data/places.json?v=menu-category-1');
   state.places = await res.json();
   translateDataset();
   populateCuisineFilter();
@@ -106,6 +106,7 @@ function translateDataset() {
     ...place,
     city_ko: cityLabel(place.city),
     area_ko: displayArea(place.area),
+    menu_category_ko: place.menu_category || inferMenuCategory(place),
   }));
 }
 
@@ -178,11 +179,11 @@ function renderLandmarks() {
 }
 
 function populateCuisineFilter() {
-  const cuisines = [...new Set(state.places.map(place => place.food_type))].sort();
-  cuisines.forEach(cuisine => {
+  const categories = [...new Set(state.places.map(place => categoryLabel(place)))].sort((a, b) => compareCategory(a, b));
+  categories.forEach(category => {
     const option = document.createElement('option');
-    option.value = cuisine;
-    option.textContent = cuisine;
+    option.value = category;
+    option.textContent = category;
     cuisineFilter.appendChild(option);
   });
 }
@@ -192,13 +193,13 @@ function applyFilters() {
   const cuisine = cuisineFilter.value;
   const term = searchInput.value.trim().toLowerCase();
 
-  state.filtered = state.places.filter(place => {
+  state.filtered = sortPlaces(state.places.filter(place => {
     const cityOk = city === 'all' || place.city === city;
-    const cuisineOk = cuisine === 'all' || place.food_type === cuisine;
-    const haystack = [place.name, place.area, place.area_ko, place.food_type, place.user_note, place.cuisine, place.city_ko].join(' ').toLowerCase();
+    const cuisineOk = cuisine === 'all' || categoryLabel(place) === cuisine;
+    const haystack = [place.name, place.area, place.area_ko, place.food_type, categoryLabel(place), place.user_note, place.cuisine, place.city_ko].join(' ').toLowerCase();
     const searchOk = !term || haystack.includes(term);
     return cityOk && cuisineOk && searchOk;
-  });
+  }));
 
   if (state.activePlace && !state.filtered.some(place => place.name === state.activePlace.name)) {
     closeDetail();
@@ -256,11 +257,22 @@ function renderMarkers() {
 function renderList() {
   placeList.innerHTML = '';
   if (!state.filtered.length) {
-    placeList.innerHTML = '<p class="empty-state">조건에 맞는 장소가 없어. 검색어를 바꾸거나 도시 필터를 풀어봐.</p>';
+    placeList.innerHTML = '<p class="empty-state">조건에 맞는 장소가 없어. 검색어를 바꾸거나 카테고리 필터를 풀어봐.</p>';
     return;
   }
 
+  let currentCategory = null;
+
   state.filtered.forEach(place => {
+    const category = categoryLabel(place);
+    if (category !== currentCategory) {
+      const heading = document.createElement('h3');
+      heading.className = 'place-group-title';
+      heading.textContent = category;
+      placeList.appendChild(heading);
+      currentCategory = category;
+    }
+
     const fragment = cardTemplate.content.cloneNode(true);
     fragment.querySelector('.card-area').textContent = `${place.city_ko} · ${place.area_ko}`;
     fragment.querySelector('.card-title').textContent = place.name;
@@ -268,6 +280,7 @@ function renderList() {
     fragment.querySelector('.card-food').textContent = place.food_type;
     fragment.querySelector('.card-note').textContent = place.user_note || '메모 없음';
     const meta = fragment.querySelector('.card-meta');
+    meta.appendChild(makeChip(category, 'category-chip'));
     meta.appendChild(makeChip(locationLabel(place), `status-${place.status}`));
     if (state.currentPosition) meta.appendChild(makeChip(distanceLabel(place), ''));
     if (place.area && place.area !== 'unknown') meta.appendChild(makeChip(place.area_ko, ''));
@@ -294,7 +307,7 @@ function focusPlace(place, marker) {
   state.infoWindow.setContent(`
     <div style="min-width:160px">
       <b>${escapeHtml(place.name)}</b><br>
-      ${escapeHtml(place.food_type)}<br>
+      ${escapeHtml(categoryLabel(place))} · ${escapeHtml(place.food_type)}<br>
       ${escapeHtml(locationLabel(place))}<br>
       <span>${escapeHtml(place.city_ko)} · ${escapeHtml(place.area_ko)}</span>
     </div>
@@ -311,7 +324,8 @@ function openDetail(place) {
     <p class="card-area">${place.city_ko} · ${place.area_ko}</p>
     <h2>${escapeHtml(place.name)}</h2>
     <p class="${'status-' + place.status}">${locationLabel(place)}</p>
-    <p><b>음식:</b> ${escapeHtml(place.food_type)}</p>
+    <p><b>카테고리:</b> ${escapeHtml(categoryLabel(place))}</p>
+    <p><b>대표 메뉴:</b> ${escapeHtml(place.food_type)}</p>
     <p>${escapeHtml(place.user_note || '메모 없음')}</p>
     ${state.currentPosition ? `<p><b>현재 위치 기준:</b> ${distanceLabel(place)}</p>` : '<p><b>거리:</b> 위치 권한 허용 시 표시</p>'}
     <p><b>도시:</b> ${place.city_ko}</p>
@@ -390,6 +404,68 @@ function locationLabel(place) {
 
 function cityLabel(city) {
   return city === 'Kyoto' ? '교토' : city === 'Osaka' ? '오사카' : city;
+}
+
+function inferMenuCategory(place) {
+  const text = [place.menu_category, place.cuisine, place.food_type, place.name].filter(Boolean).join(' ').toLowerCase();
+  if (text.includes('sushi')) return '스시/해산물';
+  if (text.includes('seafood')) return text.includes('sushi') ? '스시/해산물' : '해산물덮밥/돈부리';
+  if (text.includes('takoyaki') || text.includes('akashiyaki')) return '타코야키';
+  if (text.includes('butaman') || text.includes('만두')) return '만두';
+  if (text.includes('sukiyaki') || text.includes('nabe') || text.includes('전골')) return '스키야키/전골';
+  if (text.includes('tsukemen')) return '츠케멘';
+  if (text.includes('ramen')) return '라멘';
+  if (text.includes('udon') || text.includes('soba')) return '우동/소바';
+  if (text.includes('gyukatsu') || text.includes('tempura') || text.includes('kushikatsu') || text.includes('튀김') || text.includes('카츠')) return '튀김/카츠';
+  if (text.includes('katsudon') || text.includes('curry')) return '덮밥/카레';
+  if (text.includes('tuna rice bowl') || text.includes('참치덮밥')) return '해산물덮밥/돈부리';
+  if (text.includes('onigiri') || text.includes('주먹밥')) return '오니기리';
+  if (text.includes('roll') || text.includes('김밥')) return '롤/김밥';
+  if (text.includes('okonomiyaki') || text.includes('teppan') || text.includes('야키소바') || text.includes('철판')) return '오코노미야키/철판';
+  if (text.includes('wagyu') || text.includes('yakiniku') || text.includes('beef specialty') || text.includes('소고기 전문점') || text.includes('고기구이')) return '와규/야키니쿠';
+  return place.food_type || '기타';
+}
+
+function categoryLabel(place) {
+  return place.menu_category_ko || place.menu_category || inferMenuCategory(place);
+}
+
+function categoryOrderValue(category) {
+  const order = [
+    '스시/해산물',
+    '해산물덮밥/돈부리',
+    '타코야키',
+    '만두',
+    '스키야키/전골',
+    '라멘',
+    '츠케멘',
+    '우동/소바',
+    '튀김/카츠',
+    '덮밥/카레',
+    '오코노미야키/철판',
+    '와규/야키니쿠',
+    '오니기리',
+    '롤/김밥',
+  ];
+  const index = order.indexOf(category);
+  return index === -1 ? order.length : index;
+}
+
+function compareCategory(a, b) {
+  const diff = categoryOrderValue(a) - categoryOrderValue(b);
+  return diff || a.localeCompare(b, 'ko');
+}
+
+function sortPlaces(places) {
+  return [...places].sort((a, b) => {
+    const categoryDiff = compareCategory(categoryLabel(a), categoryLabel(b));
+    if (categoryDiff) return categoryDiff;
+    const cityDiff = cityLabel(a.city).localeCompare(cityLabel(b.city), 'ko');
+    if (cityDiff) return cityDiff;
+    const areaDiff = displayArea(a.area).localeCompare(displayArea(b.area), 'ko');
+    if (areaDiff) return areaDiff;
+    return a.name.localeCompare(b.name, 'ko');
+  });
 }
 
 function displayArea(area) {

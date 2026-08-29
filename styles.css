@@ -203,6 +203,18 @@ select, input {
   outline: 2px solid rgba(101,169,255,0.65);
 }
 
+.place-group-title {
+  margin: 14px 4px 2px;
+  color: var(--accent-2);
+  font-size: 15px;
+  letter-spacing: 0.01em;
+}
+
+.category-chip {
+  background: rgba(142,240,196,0.12);
+  color: var(--accent-2);
+}
+
 .card-top {
   display: flex;
   justify-content: space-between;
