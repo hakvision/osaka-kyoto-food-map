@@ -1,3 +1,5 @@
+const GOOGLE_MAPS_API_KEY = 'AIzaSyAYoKYldmgkXzrMEdD16zPKW_NKy_DuRBc';
+
 const LANDMARKS = [
   { name: '난바역', city: 'Osaka', area: 'Namba', lat: 34.6663, lon: 135.5019, note: '난바 중심 이동 기준점' },
   { name: '도톤보리', city: 'Osaka', area: 'Namba', lat: 34.6687, lon: 135.5019, note: '먹거리 밀집 지역' },
@@ -18,6 +20,8 @@ const state = {
   landmarkMarkers: [],
   currentPosition: null,
   userMarker: null,
+  infoWindow: null,
+  googleReady: false,
 };
 
 const cityFilter = document.querySelector('#cityFilter');
@@ -31,15 +35,28 @@ const detailContent = document.querySelector('#detailContent');
 const closeSheet = document.querySelector('#closeSheet');
 const cardTemplate = document.querySelector('#cardTemplate');
 
-async function init() {
+window.initGoogleFoodMap = async function initGoogleFoodMap() {
+  state.googleReady = true;
+  state.map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: 34.679, lng: 135.503 },
+    zoom: 12,
+    mapTypeControl: false,
+    streetViewControl: false,
+    fullscreenControl: false,
+    clickableIcons: true,
+    gestureHandling: 'greedy',
+    language: 'ko',
+  });
+  state.infoWindow = new google.maps.InfoWindow();
+
   const res = await fetch('./data/places.json');
   state.places = await res.json();
   translateDataset();
-  initMap();
   populateCuisineFilter();
   bindEvents();
+  renderLandmarks();
   applyFilters();
-}
+};
 
 function translateDataset() {
   state.places = state.places.map(place => ({
@@ -49,29 +66,35 @@ function translateDataset() {
   }));
 }
 
-function initMap() {
-  state.map = L.map('map', { zoomControl: true }).setView([34.679, 135.503], 12);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(state.map);
-
-  renderLandmarks();
-}
-
 function renderLandmarks() {
-  state.landmarkMarkers.forEach(marker => marker.remove());
+  clearMarkers(state.landmarkMarkers);
   state.landmarkMarkers = [];
 
   LANDMARKS.forEach(spot => {
-    const icon = L.divIcon({
-      className: 'landmark-icon',
-      html: `<div class="landmark-dot"></div><div class="landmark-label">${escapeHtml(spot.name)}</div>`,
-      iconAnchor: [10, 10],
+    const marker = new google.maps.Marker({
+      position: { lat: spot.lat, lng: spot.lon },
+      map: state.map,
+      title: spot.name,
+      label: {
+        text: spot.name,
+        color: '#f6fbff',
+        fontSize: '12px',
+        fontWeight: '700',
+      },
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 7,
+        fillColor: '#3b82f6',
+        fillOpacity: 1,
+        strokeColor: '#ffffff',
+        strokeWeight: 2,
+      },
+      zIndex: 50,
     });
-    const marker = L.marker([spot.lat, spot.lon], { icon, keyboard: false }).addTo(state.map);
-    marker.bindPopup(`<b>${escapeHtml(spot.name)}</b><br>${escapeHtml(spot.note)}`);
+    marker.addListener('click', () => {
+      state.infoWindow.setContent(`<b>${escapeHtml(spot.name)}</b><br>${escapeHtml(spot.note)}`);
+      state.infoWindow.open({ anchor: marker, map: state.map });
+    });
     state.landmarkMarkers.push(marker);
   });
 }
@@ -113,34 +136,52 @@ function applyFilters() {
 }
 
 function renderMarkers() {
-  state.markers.forEach(marker => marker.remove());
+  clearMarkers(state.markers);
   state.markers = [];
-  const bounds = [];
+
+  const bounds = new google.maps.LatLngBounds();
+  let hasBounds = false;
 
   state.filtered.forEach(place => {
-    const marker = L.circleMarker([place.lat, place.lon], {
-      radius: 9,
-      weight: 2,
-      color: markerColor(place),
-      fillColor: markerColor(place),
-      fillOpacity: 0.92,
-    }).addTo(state.map);
+    const marker = new google.maps.Marker({
+      position: { lat: place.lat, lng: place.lon },
+      map: state.map,
+      title: place.name,
+      icon: {
+        path: google.maps.SymbolPath.CIRCLE,
+        scale: 8,
+        fillColor: markerColor(place),
+        fillOpacity: 0.95,
+        strokeColor: '#0b1220',
+        strokeWeight: 2,
+      },
+      zIndex: place.location_precision === 'exact' ? 40 : 30,
+    });
 
-    marker.bindPopup(`<b>${escapeHtml(place.name)}</b><br>${escapeHtml(place.food_type)}<br>${escapeHtml(locationLabel(place))}<br>${escapeHtml(place.city_ko)} · ${escapeHtml(place.area_ko)}`);
-    marker.on('click', () => openDetail(place));
+    marker.addListener('click', () => {
+      state.infoWindow.setContent(`<b>${escapeHtml(place.name)}</b><br>${escapeHtml(place.food_type)}<br>${escapeHtml(locationLabel(place))}<br>${escapeHtml(place.city_ko)} · ${escapeHtml(place.area_ko)}`);
+      state.infoWindow.open({ anchor: marker, map: state.map });
+      openDetail(place);
+    });
+
     state.markers.push(marker);
-    bounds.push([place.lat, place.lon]);
+    bounds.extend(marker.getPosition());
+    hasBounds = true;
   });
 
   LANDMARKS.filter(spot => cityFilter.value === 'all' || spot.city === cityFilter.value)
-    .forEach(spot => bounds.push([spot.lat, spot.lon]));
+    .forEach(spot => {
+      bounds.extend({ lat: spot.lat, lng: spot.lon });
+      hasBounds = true;
+    });
 
   if (state.userMarker && state.currentPosition) {
-    bounds.push([state.currentPosition.lat, state.currentPosition.lon]);
+    bounds.extend({ lat: state.currentPosition.lat, lng: state.currentPosition.lon });
+    hasBounds = true;
   }
 
-  if (bounds.length) {
-    state.map.fitBounds(bounds, { padding: [36, 36] });
+  if (hasBounds) {
+    state.map.fitBounds(bounds, 56);
     if (state.filtered.length === 1) state.map.setZoom(15);
   }
 }
@@ -161,7 +202,11 @@ function renderList() {
     if (place.area && place.area !== 'unknown') meta.appendChild(makeChip(place.area_ko, ''));
 
     const card = fragment.querySelector('.place-card');
-    card.addEventListener('click', () => openDetail(place));
+    card.addEventListener('click', () => {
+      openDetail(place);
+      state.map.panTo({ lat: place.lat, lng: place.lon });
+      if (state.map.getZoom() < 15) state.map.setZoom(15);
+    });
     placeList.appendChild(fragment);
   });
 }
@@ -202,11 +247,21 @@ function locateUser() {
   navigator.geolocation.getCurrentPosition(
     ({ coords }) => {
       state.currentPosition = { lat: coords.latitude, lon: coords.longitude };
-      if (state.userMarker) state.userMarker.remove();
-      state.userMarker = L.circleMarker([coords.latitude, coords.longitude], {
-        radius: 10, color: '#ffffff', fillColor: '#4dd0ff', fillOpacity: 1, weight: 3
-      }).addTo(state.map).bindPopup('현재 위치');
-      state.userMarker.openPopup();
+      if (state.userMarker) state.userMarker.setMap(null);
+      state.userMarker = new google.maps.Marker({
+        position: { lat: coords.latitude, lng: coords.longitude },
+        map: state.map,
+        title: '현재 위치',
+        icon: {
+          path: google.maps.SymbolPath.CIRCLE,
+          scale: 9,
+          fillColor: '#4dd0ff',
+          fillOpacity: 1,
+          strokeColor: '#ffffff',
+          strokeWeight: 3,
+        },
+        zIndex: 60,
+      });
       renderList();
       renderMarkers();
       locateBtn.disabled = false;
@@ -219,6 +274,10 @@ function locateUser() {
     },
     { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
   );
+}
+
+function clearMarkers(markers) {
+  markers.forEach(marker => marker.setMap(null));
 }
 
 function markerColor(place) {
@@ -283,7 +342,17 @@ function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 }
 
-init().catch(err => {
-  console.error(err);
-  placeList.innerHTML = '<p>데이터 로딩 실패</p>';
-});
+(function loadGoogleMaps() {
+  if (window.google?.maps) {
+    window.initGoogleFoodMap();
+    return;
+  }
+  const script = document.createElement('script');
+  script.src = `https://maps.googleapis.com/maps/api/js?key=${GOOGLE_MAPS_API_KEY}&language=ko&region=KR&callback=initGoogleFoodMap`;
+  script.async = true;
+  script.defer = true;
+  script.onerror = () => {
+    placeList.innerHTML = '<p>Google Maps 로딩 실패</p>';
+  };
+  document.head.appendChild(script);
+})();

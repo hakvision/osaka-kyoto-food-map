@@ -186,32 +186,10 @@ select, input {
 .status-exact { color: var(--accent-2); }
 .status-area { color: var(--approx); }
 .status-closed_or_uncertain { color: var(--closed); }
-.landmark-icon {
-  background: transparent;
-  border: 0;
+.gm-style .gm-style-iw-c,
+.gm-style .gm-style-iw-d {
+  color: #0b1220;
 }
-.landmark-dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 999px;
-  background: #3b82f6;
-  border: 2px solid #ffffff;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.35);
-}
-.landmark-label {
-  margin-top: 4px;
-  margin-left: -8px;
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 999px;
-  background: rgba(7,16,29,0.86);
-  color: #f6fbff;
-  font-size: 11px;
-  font-weight: 700;
-  white-space: nowrap;
-  border: 1px solid rgba(255,255,255,0.12);
-}
-.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #0f1b2f; color: var(--text); }
 @media (min-width: 920px) {
   .topbar { grid-template-columns: 1fr auto; align-items: center; }
   .controls { grid-template-columns: 150px 180px 1fr; align-items: end; }
