@@ -21,14 +21,20 @@ const state = {
   currentPosition: null,
   userMarker: null,
   infoWindow: null,
-  googleReady: false,
   activePlace: null,
+  openPanelId: null,
 };
 
 const cityFilter = document.querySelector('#cityFilter');
 const cuisineFilter = document.querySelector('#cuisineFilter');
 const searchInput = document.querySelector('#searchInput');
 const locateBtn = document.querySelector('#locateBtn');
+const menuBtn = document.querySelector('#menuBtn');
+const menuDrawer = document.querySelector('#menuDrawer');
+const closeDrawer = document.querySelector('#closeDrawer');
+const panelButtons = [...document.querySelectorAll('[data-panel]')];
+const panelCloseButtons = [...document.querySelectorAll('[data-close-panel]')];
+const overlayPanels = ['filterPanel', 'listPanel', 'legendPanel'].map(id => document.getElementById(id));
 const placeList = document.querySelector('#placeList');
 const resultMeta = document.querySelector('#resultMeta');
 const detailSheet = document.querySelector('#detailSheet');
@@ -37,7 +43,6 @@ const closeSheet = document.querySelector('#closeSheet');
 const cardTemplate = document.querySelector('#cardTemplate');
 
 window.initGoogleFoodMap = async function initGoogleFoodMap() {
-  state.googleReady = true;
   state.map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 34.679, lng: 135.503 },
     zoom: 12,
@@ -58,8 +63,11 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
       { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0b2746' }] },
     ],
   });
+
   state.infoWindow = new google.maps.InfoWindow();
-  state.map.addListener('click', () => closeDetail());
+  state.map.addListener('click', () => {
+    closeDrawerPanelAndDetail({ keepDetail: false });
+  });
 
   const res = await fetch('./data/places.json');
   state.places = await res.json();
@@ -70,6 +78,29 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
   applyFilters();
 };
 
+function bindEvents() {
+  menuBtn.addEventListener('click', toggleDrawer);
+  closeDrawer.addEventListener('click', closeMenuDrawer);
+  panelButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      openPanel(button.dataset.panel);
+    });
+  });
+  panelCloseButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      closePanel(button.dataset.closePanel);
+    });
+  });
+  cityFilter.addEventListener('change', applyFilters);
+  cuisineFilter.addEventListener('change', applyFilters);
+  searchInput.addEventListener('input', applyFilters);
+  closeSheet.addEventListener('click', closeDetail);
+  locateBtn.addEventListener('click', locateUser);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeDrawerPanelAndDetail({ keepDetail: false });
+  });
+}
+
 function translateDataset() {
   state.places = state.places.map(place => ({
     ...place,
@@ -78,21 +109,54 @@ function translateDataset() {
   }));
 }
 
+function toggleDrawer() {
+  const opening = menuDrawer.classList.contains('hidden');
+  if (opening) {
+    menuDrawer.classList.remove('hidden');
+    menuBtn.setAttribute('aria-expanded', 'true');
+  } else {
+    closeMenuDrawer();
+  }
+}
+
+function closeMenuDrawer() {
+  menuDrawer.classList.add('hidden');
+  menuBtn.setAttribute('aria-expanded', 'false');
+}
+
+function openPanel(panelId) {
+  overlayPanels.forEach(panel => panel.classList.add('hidden'));
+  const panel = document.getElementById(panelId);
+  panel?.classList.remove('hidden');
+  state.openPanelId = panelId;
+  closeMenuDrawer();
+}
+
+function closePanel(panelId) {
+  document.getElementById(panelId)?.classList.add('hidden');
+  if (state.openPanelId === panelId) state.openPanelId = null;
+}
+
+function closeAllPanels() {
+  overlayPanels.forEach(panel => panel.classList.add('hidden'));
+  state.openPanelId = null;
+}
+
+function closeDrawerPanelAndDetail({ keepDetail }) {
+  closeMenuDrawer();
+  closeAllPanels();
+  if (!keepDetail) closeDetail();
+}
+
 function renderLandmarks() {
   clearMarkers(state.landmarkMarkers);
   state.landmarkMarkers = [];
-
   LANDMARKS.forEach(spot => {
     const marker = new google.maps.Marker({
       position: { lat: spot.lat, lng: spot.lon },
       map: state.map,
       title: spot.name,
-      label: {
-        text: spot.name,
-        color: '#f6fbff',
-        fontSize: '12px',
-        fontWeight: '700',
-      },
+      label: { text: spot.name, color: '#f6fbff', fontSize: '12px', fontWeight: '700' },
       icon: {
         path: google.maps.SymbolPath.CIRCLE,
         scale: 7,
@@ -106,6 +170,7 @@ function renderLandmarks() {
     marker.addListener('click', () => {
       state.infoWindow.setContent(`<b>${escapeHtml(spot.name)}</b><br>${escapeHtml(spot.note)}`);
       state.infoWindow.open({ anchor: marker, map: state.map });
+      closeAllPanels();
       closeDetail();
     });
     state.landmarkMarkers.push(marker);
@@ -119,17 +184,6 @@ function populateCuisineFilter() {
     option.value = cuisine;
     option.textContent = cuisine;
     cuisineFilter.appendChild(option);
-  });
-}
-
-function bindEvents() {
-  cityFilter.addEventListener('change', applyFilters);
-  cuisineFilter.addEventListener('change', applyFilters);
-  searchInput.addEventListener('input', applyFilters);
-  closeSheet.addEventListener('click', closeDetail);
-  locateBtn.addEventListener('click', locateUser);
-  document.addEventListener('keydown', event => {
-    if (event.key === 'Escape') closeDetail();
   });
 }
 
@@ -148,7 +202,6 @@ function applyFilters() {
 
   if (state.activePlace && !state.filtered.some(place => place.name === state.activePlace.name)) {
     closeDetail();
-    return;
   }
 
   renderMarkers();
@@ -178,21 +231,16 @@ function renderMarkers() {
       },
       zIndex: place.location_precision === 'exact' ? 40 : 30,
     });
-
-    marker.addListener('click', () => {
-      focusPlace(place, marker);
-    });
-
+    marker.addListener('click', () => focusPlace(place, marker));
     state.markers.push(marker);
     bounds.extend(marker.getPosition());
     hasBounds = true;
   });
 
-  LANDMARKS.filter(spot => cityFilter.value === 'all' || spot.city === cityFilter.value)
-    .forEach(spot => {
-      bounds.extend({ lat: spot.lat, lng: spot.lon });
-      hasBounds = true;
-    });
+  LANDMARKS.filter(spot => cityFilter.value === 'all' || spot.city === cityFilter.value).forEach(spot => {
+    bounds.extend({ lat: spot.lat, lng: spot.lon });
+    hasBounds = true;
+  });
 
   if (state.userMarker && state.currentPosition) {
     bounds.extend({ lat: state.currentPosition.lat, lng: state.currentPosition.lon });
@@ -207,7 +255,6 @@ function renderMarkers() {
 
 function renderList() {
   placeList.innerHTML = '';
-
   if (!state.filtered.length) {
     placeList.innerHTML = '<p class="empty-state">조건에 맞는 장소가 없어. 검색어를 바꾸거나 도시 필터를 풀어봐.</p>';
     return;
@@ -220,7 +267,6 @@ function renderList() {
     fragment.querySelector('.card-rank').textContent = place.rank || (place.status === 'closed_or_uncertain' ? '주의' : '추천');
     fragment.querySelector('.card-food').textContent = place.food_type;
     fragment.querySelector('.card-note').textContent = place.user_note || '메모 없음';
-
     const meta = fragment.querySelector('.card-meta');
     meta.appendChild(makeChip(locationLabel(place), `status-${place.status}`));
     if (state.currentPosition) meta.appendChild(makeChip(distanceLabel(place), ''));
@@ -231,6 +277,7 @@ function renderList() {
     card.addEventListener('click', () => {
       state.map.panTo({ lat: place.lat, lng: place.lon });
       if (state.map.getZoom() < 15) state.map.setZoom(15);
+      closeAllPanels();
       openDetail(place);
     });
     placeList.appendChild(fragment);
@@ -240,7 +287,7 @@ function renderList() {
 function updateResultMeta() {
   const exact = state.filtered.filter(place => place.location_precision === 'exact').length;
   const currentCity = cityFilter.value === 'all' ? '전체' : cityLabel(cityFilter.value);
-  resultMeta.textContent = `${currentCity} ${state.filtered.length}곳 · 정확 위치 ${exact}곳 · 지도 위 플로팅 상세 보기`;
+  resultMeta.textContent = `${currentCity} ${state.filtered.length}곳 · 정확 위치 ${exact}곳`;
 }
 
 function focusPlace(place, marker) {
@@ -253,6 +300,7 @@ function focusPlace(place, marker) {
     </div>
   `);
   state.infoWindow.open({ anchor: marker, map: state.map });
+  closeAllPanels();
   openDetail(place);
 }
 
@@ -314,11 +362,11 @@ function locateUser() {
       renderMarkers();
       if (state.activePlace) openDetail(state.activePlace);
       locateBtn.disabled = false;
-      locateBtn.textContent = '거리 갱신 완료';
+      locateBtn.textContent = '내 위치';
     },
     () => {
       locateBtn.disabled = false;
-      locateBtn.textContent = '내 위치로 거리 보기';
+      locateBtn.textContent = '내 위치';
       alert('위치 권한이 거부되었거나 확인 실패');
     },
     { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
@@ -401,7 +449,7 @@ function escapeHtml(str) {
   script.async = true;
   script.defer = true;
   script.onerror = () => {
-    placeList.innerHTML = '<p>Google Maps 로딩 실패</p>';
+    placeList.innerHTML = '<p class="empty-state">Google Maps 로딩 실패</p>';
   };
   document.head.appendChild(script);
 })();

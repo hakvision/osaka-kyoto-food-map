@@ -5,22 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Osaka Kyoto Food Map</title>
   <meta name="description" content="오사카/교토 맛집 메모를 모바일 지도 앱으로 정리한 개인용 가이드">
-  <link rel="stylesheet" href="./styles.css?v=705648b">
+  <link rel="stylesheet" href="./styles.css?v=menu-drawer-1">
 </head>
 <body>
   <div class="app-shell">
     <div id="map" aria-label="오사카 교토 맛집 지도"></div>
 
-    <header class="floating-panel top-panel">
-      <div class="hero-copy">
-        <p class="eyebrow">Mobile-first food guide</p>
-        <h1>오사카 · 교토 맛집맵</h1>
-        <p class="subtitle">지도를 화면 전체로 두고, 필요한 정보만 플로팅 패널로 띄우는 방식으로 정리했어.</p>
+    <button id="menuBtn" class="map-fab menu-fab" type="button" aria-expanded="false" aria-controls="menuDrawer">☰</button>
+    <button id="locateBtn" class="map-fab locate-fab" type="button">내 위치</button>
+
+    <aside id="menuDrawer" class="menu-drawer hidden" aria-label="메뉴">
+      <div class="drawer-header">
+        <div>
+          <p class="eyebrow">Map menu</p>
+          <h1>오사카 · 교토 맛집맵</h1>
+          <p class="subtitle">기본은 지도만 보고, 필요할 때만 메뉴를 열어 보게 바꿨어.</p>
+        </div>
+        <button id="closeDrawer" class="drawer-close" type="button">닫기</button>
       </div>
-      <div class="action-row">
-        <button id="locateBtn" class="primary-btn" type="button">내 위치로 거리 보기</button>
+
+      <div class="drawer-actions">
+        <button class="drawer-action" type="button" data-panel="filterPanel">필터</button>
+        <button class="drawer-action" type="button" data-panel="listPanel">장소 목록</button>
+        <button class="drawer-action" type="button" data-panel="legendPanel">범례</button>
       </div>
-      <section class="controls compact-controls" aria-label="지도 필터">
+    </aside>
+
+    <section id="filterPanel" class="overlay-panel hidden" aria-label="지도 필터">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Filter</p>
+          <h2>지도 필터</h2>
+        </div>
+        <button class="panel-close" type="button" data-close-panel="filterPanel">닫기</button>
+      </div>
+      <div class="controls compact-controls">
         <label>
           <span>도시</span>
           <select id="cityFilter">
@@ -35,30 +54,38 @@
             <option value="all">전체</option>
           </select>
         </label>
-        <label class="search-wrap wide-field">
+        <label class="wide-field">
           <span>검색</span>
           <input id="searchInput" type="search" placeholder="가게명, 지역, 음식 검색">
         </label>
-      </section>
-    </header>
+      </div>
+    </section>
 
-    <aside class="floating-panel map-legend">
-      <p>핀 색상: <b>정확 위치</b> · <b>대략 위치</b> · <b>폐업/불명</b></p>
-      <p>기준점: <b>난바역</b> · <b>오사카역</b> · <b>텐노지역</b> · <b>교토역</b> · <b>기온</b></p>
-    </aside>
-
-    <section class="floating-panel list-panel" aria-label="장소 목록">
-      <div class="list-header">
+    <section id="listPanel" class="overlay-panel list-panel hidden" aria-label="장소 목록">
+      <div class="panel-header">
         <div>
-          <p class="eyebrow list-eyebrow">Map list</p>
+          <p class="eyebrow">Map list</p>
           <h2>장소 목록</h2>
           <p id="resultMeta"></p>
         </div>
+        <button class="panel-close" type="button" data-close-panel="listPanel">닫기</button>
       </div>
       <div id="placeList" class="place-list"></div>
     </section>
 
-    <section id="detailSheet" class="floating-panel detail-sheet hidden" aria-live="polite">
+    <section id="legendPanel" class="overlay-panel legend-panel hidden" aria-label="지도 범례">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Legend</p>
+          <h2>지도 안내</h2>
+        </div>
+        <button class="panel-close" type="button" data-close-panel="legendPanel">닫기</button>
+      </div>
+      <p>핀 색상: <b>정확 위치</b> · <b>대략 위치</b> · <b>폐업/불명</b></p>
+      <p>기준점: <b>난바역</b> · <b>오사카역</b> · <b>텐노지역</b> · <b>교토역</b> · <b>기온</b></p>
+    </section>
+
+    <section id="detailSheet" class="detail-sheet hidden" aria-live="polite">
       <button id="closeSheet" class="sheet-close" type="button">닫기</button>
       <div id="detailContent"></div>
     </section>
@@ -79,6 +106,6 @@
     </article>
   </template>
 
-  <script src="./app.js?v=705648b" defer></script>
+  <script src="./app.js?v=menu-drawer-1" defer></script>
 </body>
 </html>
