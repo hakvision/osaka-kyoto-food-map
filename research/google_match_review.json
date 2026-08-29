@@ -1,0 +1,247 @@
+[
+  {
+    "id": 1,
+    "name": "유카리 오코노미야끼 난바",
+    "decision": "confirmed",
+    "matched_name": "유카리 오코노미야키",
+    "address": "2-chōme-11-12 Sennichimae, Chuo Ward, Osaka, 542-0074"
+  },
+  {
+    "id": 2,
+    "name": "타쿠마 우동",
+    "decision": "confirmed",
+    "matched_name": "타쿠마 우동",
+    "address": "〒556-0001 Osaka, Naniwa Ward, Shimodera, 3-chōme−1−１４ エクレール夕陽ヶ丘 １階"
+  },
+  {
+    "id": 3,
+    "name": "나니와 신풍라멘",
+    "decision": "confirmed",
+    "matched_name": "나니와신풍라면",
+    "address": "5-chōme-5-19 Nipponbashi, Naniwa Ward, Osaka, 556-0005"
+  },
+  {
+    "id": 4,
+    "name": "큐카츠 토미타",
+    "decision": "confirmed",
+    "matched_name": "규카츠 토미타",
+    "address": "〒556-0011 Osaka, Naniwa Ward, Nanbanaka, 2-chōme−3−１ ２階"
+  },
+  {
+    "id": 5,
+    "name": "포미에",
+    "decision": "confirmed",
+    "matched_name": "포미에",
+    "address": "〒556-0005 Osaka, Naniwa Ward, Nipponbashi, 5-chōme−17−２０ やかん亭"
+  },
+  {
+    "id": 6,
+    "name": "카스우동",
+    "decision": "uncertain",
+    "candidate": "카스야 호젠지점",
+    "address": "1-chōme-5-20 Namba, Chuo Ward, Osaka, 542-0076"
+  },
+  {
+    "id": 7,
+    "name": "미타제면소",
+    "decision": "uncertain",
+    "candidate": "츠케멘 전문점 미타 제면소",
+    "address": "2-chōme-11-3 Sennichimae, Chuo Ward, Osaka, 542-0074"
+  },
+  {
+    "id": 8,
+    "name": "야마짱",
+    "decision": "confirmed",
+    "matched_name": "아베노타코야키 야마짱 본점",
+    "address": "1-chōme-2-34 Abenosuji, Abeno Ward, Osaka, 545-0052"
+  },
+  {
+    "id": 9,
+    "name": "하나타코",
+    "decision": "confirmed",
+    "matched_name": "하나다코",
+    "address": "〒530-0017 Osaka, Kita Ward, Kakudachō, 9−２６ 大阪新梅田食道街 １階"
+  },
+  {
+    "id": 10,
+    "name": "우마이야",
+    "decision": "uncertain",
+    "candidate": "우마이야",
+    "address": "대한민국 서울특별시 천호동 455-8번지 강동구 서울특별시 KR"
+  },
+  {
+    "id": 11,
+    "name": "도라쿠와나카",
+    "decision": "confirmed",
+    "matched_name": "타코야키도라쿠 와나카 센니치마에점",
+    "address": "11-19 Nanbasennichimae, Chuo Ward, Osaka, 542-0075"
+  },
+  {
+    "id": 12,
+    "name": "멘야조로쿠",
+    "decision": "confirmed",
+    "matched_name": "멘야 죠로쿠",
+    "address": "6-16 Nanbasennichimae, Chuo Ward, Osaka, 542-0075"
+  },
+  {
+    "id": 13,
+    "name": "551 Horai",
+    "decision": "uncertain",
+    "candidate": "551 Horai Honten",
+    "address": "3-chōme-6-3 Namba, Chuo Ward, Osaka, 542-0076"
+  },
+  {
+    "id": 14,
+    "name": "니쿠고로",
+    "decision": "uncertain",
+    "candidate": "니쿠고로 텐마점",
+    "address": "〒530-0041 Osaka, Kita Ward, Tenjinbashi, 5-chōme−2−６ ベニスビル ２Ｆ"
+  },
+  {
+    "id": 15,
+    "name": "덴푸라 마키노",
+    "decision": "uncertain",
+    "candidate": "덴푸라 마키노 난바센니치마에점",
+    "address": "〒542-0076 Osaka, Chuo Ward, Namba, 3-chōme−3−４ 難波日大ビル １階"
+  },
+  {
+    "id": 16,
+    "name": "야키니쿠 코지마",
+    "decision": "uncertain",
+    "candidate": "야키니쿠 코지마 하나레 오사카우메다점",
+    "address": "〒530-0014 Osaka, Kita Ward, Tsurunochō, 4−４ A棟1F"
+  },
+  {
+    "id": 17,
+    "name": "오루노 히츠토부",
+    "decision": "uncertain",
+    "candidate": "아지킷쵸 분부안",
+    "address": "〒541-0053 Osaka, Chuo Ward, Honmachi, 3-chōme−6−４ Osaka Metro本町ビル 地下1階"
+  },
+  {
+    "id": 18,
+    "name": "스시마츠이",
+    "decision": "uncertain",
+    "candidate": "스시마츠",
+    "address": "대한민국 충청남도 홍성군 홍북읍 청사로174번길 25"
+  },
+  {
+    "id": 19,
+    "name": "혼마치 스시 타쿠마",
+    "decision": "confirmed",
+    "matched_name": "Sushi Takuma",
+    "address": "〒541-0054 Osaka, Chuo Ward, Minamihonmachi, 3-chōme−2−１１ 日幸ビル 1F"
+  },
+  {
+    "id": 20,
+    "name": "Ishimon",
+    "decision": "confirmed",
+    "matched_name": "Ishimon",
+    "address": "〒530-0001 Osaka, Kita Ward, Umeda, 1-chōme−3−１ B2F"
+  },
+  {
+    "id": 21,
+    "name": "Rian",
+    "decision": "confirmed",
+    "matched_name": "rian",
+    "address": "〒558-0011 Osaka, Sumiyoshi Ward, Karita, 2-chōme−15−１０ 長居パークハイツ 1F"
+  },
+  {
+    "id": 22,
+    "name": "타마타케 우동",
+    "decision": "uncertain",
+    "candidate": "가마타케우동",
+    "address": "〒530-0017 Osaka, Kita Ward, Kakudachō, 9−２５ JR大阪駅高架下 新梅田食道街1階"
+  },
+  {
+    "id": 23,
+    "name": "브라운",
+    "decision": "uncertain",
+    "candidate": "카페브라운",
+    "address": "대한민국 용인시 기흥구 중동 705번지 B동 103호 라온 705 용인시 경기도 KR"
+  },
+  {
+    "id": 24,
+    "name": "라멘 쿠온",
+    "decision": "confirmed",
+    "matched_name": "라멘 쿠온",
+    "address": "〒541-0055 Osaka, Chuo Ward, Senbachūō, 1-chōme−4−３ 船場センタービル 3号館地下2階"
+  },
+  {
+    "id": 25,
+    "name": "마구로마루",
+    "decision": "uncertain",
+    "candidate": "마구로",
+    "address": "대한민국 서울특별시"
+  },
+  {
+    "id": 26,
+    "name": "Salmon kat nanba",
+    "decision": "confirmed",
+    "matched_name": "Salmon Kat Namba",
+    "address": "〒542-0074 Osaka, Chuo Ward, Sennichimae, 1-chōme−9−１２ B1"
+  },
+  {
+    "id": 27,
+    "name": "串揚げあとわあびこ店",
+    "decision": "confirmed",
+    "matched_name": "串揚げ あとわ あびこ店",
+    "address": "9-chōme-15-39 Karita, Sumiyoshi Ward, Osaka, 558-0011"
+  },
+  {
+    "id": 28,
+    "name": "생선요리 츠무기야",
+    "decision": "confirmed",
+    "matched_name": "생선요리 츠무기야",
+    "address": "2-chōme-1-1 Funakoshichō, Chuo Ward, Osaka, 540-0036"
+  },
+  {
+    "id": 29,
+    "name": "쿠로노 야키니꾸",
+    "decision": "uncertain",
+    "candidate": "코코로 야끼니꾸",
+    "address": "2-chōme-3-9 Higashishinsaibashi, Chuo Ward, Osaka, 542-0083"
+  },
+  {
+    "id": 30,
+    "name": "NikonikoNabe",
+    "decision": "confirmed",
+    "matched_name": "Nikoniko Nabe Dotonbori",
+    "address": "〒542-0071 Osaka, Chuo Ward, Dōtonbori, 1-chōme−6−１５ コムラード・ドウトンビル 8F"
+  },
+  {
+    "id": 31,
+    "name": "Homuraya",
+    "decision": "uncertain",
+    "candidate": "Sushi Homura",
+    "address": "2-chōme-1-13 Imabashi, Chuo Ward, Osaka, 541-0042"
+  },
+  {
+    "id": 32,
+    "name": "오니기리 고리짱",
+    "decision": "uncertain",
+    "candidate": "오니기리 고리짱 난바점",
+    "address": "〒542-0081 Osaka, Chuo Ward, Minamisenba, 3-chōme−5−２８ 富士ビル南船場 1階"
+  },
+  {
+    "id": 33,
+    "name": "Wagyu Ryotei Bungo Gion",
+    "decision": "confirmed",
+    "matched_name": "Wagyu Ryotei Bungo Gion",
+    "address": "56 Motoyoshichō, Higashiyama Ward, Kyoto, 605-0087"
+  },
+  {
+    "id": 34,
+    "name": "Niku no Odakichi Arashiyama",
+    "decision": "confirmed",
+    "matched_name": "Niku No Odakichi Arashiyama",
+    "address": "3-56 Sagatenryūji Susukinobabachō, Ukyo Ward, Kyoto, 616-8385"
+  },
+  {
+    "id": 35,
+    "name": "Pontocho Yakiniku Kiraku",
+    "decision": "confirmed",
+    "matched_name": "Pontocho Yakiniku Kiraku",
+    "address": "139-2 Wakamatsuchō, Nakagyo Ward, Kyoto, 604-8011"
+  }
+]

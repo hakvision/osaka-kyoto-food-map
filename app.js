@@ -318,7 +318,7 @@ function openDetail(place) {
     <p><b>지역:</b> ${place.area_ko}</p>
     <p><b>지도 메모:</b> ${place.location_precision === 'exact' ? '정확한 가게 좌표' : '대략적인 상권/동네 기준 좌표'}</p>
     <div class="detail-actions">
-      <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.maps_query)}" target="_blank" rel="noreferrer">Google Maps에서 열기</a>
+      <a href="${place.google_maps_uri || ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.maps_query))}" target="_blank" rel="noreferrer">Google Maps에서 열기</a>
       <a class="secondary" href="https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lon}&travelmode=walking" target="_blank" rel="noreferrer">도보 경로</a>
     </div>
     ${place.source_url ? `<p><a href="${place.source_url}" target="_blank" rel="noreferrer">좌표 참고 출처</a></p>` : ''}
@@ -409,6 +409,9 @@ function displayArea(area) {
     Pontocho: '폰토초',
     'Kyoto Station': '교토역',
     'Tenjinbashisuji?': '텐진바시스지 추정',
+    Ebisucho: '에비스초',
+    Temmabashi: '덴마바시',
+    Dotonbori: '도톤보리',
   };
   return map[area] || area;
 }

@@ -1,0 +1,1846 @@
+[
+  {
+    "place": {
+      "id": 1,
+      "name": "유카리 오코노미야끼 난바",
+      "city": "Osaka",
+      "area": "Namba",
+      "lat": 34.66546513719806,
+      "lon": 135.50308537595095,
+      "location_precision": "exact",
+      "status": "needs_lookup",
+      "cuisine": "okonomiyaki / teppan",
+      "food_type": "오코노미야키와 야키소바 중심의 철판요리",
+      "rank": "SS",
+      "user_note": "오코노미야끼, 야끼소바, 스페셜 메뉴 메모",
+      "source_url": "https://s.tabelog.com/kr/osaka/A2701/A270202/27003660/",
+      "maps_query": "유카리 오코노미야끼 난바 Namba Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJDz3vDWvnAGAR1J97ANBzTHI",
+        "displayName": "유카리 오코노미야키",
+        "formattedAddress": "2-chōme-11-12 Sennichimae, Chuo Ward, Osaka, 542-0074",
+        "lat": 34.6654565,
+        "lon": 135.5030765,
+        "googleMapsUri": "https://maps.google.com/?cid=8236085155752288212&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 59.78,
+        "name_ratio": 0.783,
+        "query": "유카리 오코노미야끼 난바 Namba Osaka Japan"
+      },
+      {
+        "id": "ChIJy43ukOjnAGARaPskeGscq5Q",
+        "displayName": "오코노미 야키 유카리 난바 워크 점",
+        "formattedAddress": "〒542-0076 Osaka, Chuo Ward, Namba, 2-chōme−1 なんばウォーク 1-2",
+        "lat": 34.6670942,
+        "lon": 135.49808579999998,
+        "googleMapsUri": "https://maps.google.com/?cid=10712687386533624680&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 35.25,
+        "name_ratio": 0.375,
+        "query": "유카리 오코노미야끼 난바 Namba Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 2,
+      "name": "타쿠마 우동",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.65768012801035,
+      "lon": 135.50930155702974,
+      "location_precision": "exact",
+      "status": "needs_lookup",
+      "cuisine": "udon / soba / tempura",
+      "food_type": "우동, 소바, 튀김 중심의 면요리",
+      "rank": "SS",
+      "user_note": "우동전골 1250엔, 자루소바+모둠튀김, 쫀득한 면",
+      "source_url": "https://tabelog.com/kr/osaka/A2701/A270206/27080648/",
+      "maps_query": "타쿠마 우동 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJwTM0OFznAGARsA8e6cK3SiI",
+        "displayName": "타쿠마 우동",
+        "formattedAddress": "〒556-0001 Osaka, Naniwa Ward, Shimodera, 3-chōme−1−１４ エクレール夕陽ヶ丘 １階",
+        "lat": 34.657672,
+        "lon": 135.509292,
+        "googleMapsUri": "https://maps.google.com/?cid=2470989393328738224&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "타쿠마 우동 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 3,
+      "name": "나니와 신풍라멘",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "ramen",
+      "food_type": "일본식 라멘",
+      "rank": "SS",
+      "user_note": "심야 웨이팅, 카라아게/교자 서비스, 미소/돈코츠, 차항 맛있음",
+      "source_url": "",
+      "maps_query": "나니와 신풍라멘 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJ__-krWDnAGARBjeOrhir2nk",
+        "displayName": "나니와신풍라면",
+        "formattedAddress": "5-chōme-5-19 Nipponbashi, Naniwa Ward, Osaka, 556-0005",
+        "lat": 34.6550303,
+        "lon": 135.5057325,
+        "googleMapsUri": "https://maps.google.com/?cid=8780518546008323846&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 59.0,
+        "name_ratio": 0.8,
+        "query": "나니와 신풍라멘 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 4,
+      "name": "큐카츠 토미타",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "gyukatsu",
+      "food_type": "소고기 카츠를 짧게 구워 먹는 규카츠",
+      "rank": "SSS",
+      "user_note": "줄 김, 4시쯤 상대적으로 한산, 30초 이상 굽지 말기",
+      "source_url": "",
+      "maps_query": "큐카츠 토미타 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJxwgCUhPnAGARoz8_83liVEk",
+        "displayName": "규카츠 토미타",
+        "formattedAddress": "〒556-0011 Osaka, Naniwa Ward, Nanbanaka, 2-chōme−3−１ ２階",
+        "lat": 34.6627484,
+        "lon": 135.5039325,
+        "googleMapsUri": "https://maps.google.com/?cid=5283956538724007843&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 63.0,
+        "name_ratio": 0.857,
+        "query": "큐카츠 토미타 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 5,
+      "name": "포미에",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "katsudon / curry",
+      "food_type": "돈가스덮밥, 카레, 가라아게덮밥류",
+      "rank": "A",
+      "user_note": "가츠동 전문점, 카레 가라아게돈, 짭짤한 편",
+      "source_url": "",
+      "maps_query": "포미에 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJScGP52fnAGARgU1168GvHtQ",
+        "displayName": "포미에",
+        "formattedAddress": "〒556-0005 Osaka, Naniwa Ward, Nipponbashi, 5-chōme−17−２０ やかん亭",
+        "lat": 34.658831,
+        "lon": 135.5052126,
+        "googleMapsUri": "https://maps.google.com/?cid=15284847432755924353&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "포미에 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 6,
+      "name": "카스우동",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "udon / izakaya / sashimi",
+      "food_type": "우동과 사시미를 함께 즐기는 우동/이자카야",
+      "rank": "SS",
+      "user_note": "밤에는 이자카야, 사시미 강추, 육수 호평",
+      "source_url": "",
+      "maps_query": "카스우동 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJeZ3goRTnAGAR_pGHUl_cHXw",
+        "displayName": "카스야 호젠지점",
+        "formattedAddress": "1-chōme-5-20 Namba, Chuo Ward, Osaka, 542-0076",
+        "lat": 34.6678342,
+        "lon": 135.50178,
+        "googleMapsUri": "https://maps.google.com/?cid=8943546736992293374&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 26.33,
+        "name_ratio": 0.333,
+        "query": "카스우동 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 7,
+      "name": "미타제면소",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "tsukemen",
+      "food_type": "찍어 먹는 라멘인 츠케멘",
+      "rank": "S",
+      "user_note": "온/냉, 매운 정도, 면 굵기 선택",
+      "source_url": "",
+      "maps_query": "미타제면소 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJt_qjOWvnAGARjeYj6kLDLr0",
+        "displayName": "츠케멘 전문점 미타 제면소",
+        "formattedAddress": "2-chōme-11-3 Sennichimae, Chuo Ward, Osaka, 542-0074",
+        "lat": 34.666154899999995,
+        "lon": 135.50317339999998,
+        "googleMapsUri": "https://maps.google.com/?cid=13632047814260549261&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 41.84,
+        "name_ratio": 0.526,
+        "query": "미타제면소 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJk4CfhZPmAGAR7Y2qOUp0JXY",
+        "displayName": "츠케멘 전문점 미타 제면소",
+        "formattedAddress": "〒530-0017 Osaka, Kita Ward, Kakudachō, 2−２ ＥＳＴ内 １Ｆ",
+        "lat": 34.7046997,
+        "lon": 135.5011575,
+        "googleMapsUri": "https://maps.google.com/?cid=8513338532757671405&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 41.84,
+        "name_ratio": 0.526,
+        "query": "미타제면소 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJA4pkZuPnAGAR79IBKjlwKyQ",
+        "displayName": "츠케멘 전문점 미타 제면소",
+        "formattedAddress": "〒542-0076 Osaka, Chuo Ward, Namba, 5-chōme−1−６０ なんばＣＩＴＹ南館 １階 ４１１８区画",
+        "lat": 34.6620463,
+        "lon": 135.502951,
+        "googleMapsUri": "https://maps.google.com/?cid=2606300200184173295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 41.84,
+        "name_ratio": 0.526,
+        "query": "미타제면소 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJNR_L0PHdAGARlBAct6J4Jno",
+        "displayName": "츠케멘 전문점 미타 제면소",
+        "formattedAddress": "〒545-0052 Osaka, Abeno Ward, Abenosuji, 1-chōme−3−２０ 木村ビル Ｂ１Ｆ",
+        "lat": 34.6453483,
+        "lon": 135.5129577,
+        "googleMapsUri": "https://maps.google.com/?cid=8801855161994317972&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 41.84,
+        "name_ratio": 0.526,
+        "query": "미타제면소 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJTfoLH-zmAGARwybJkJIrSV8",
+        "displayName": "츠케멘 전문점 미타 제면소",
+        "formattedAddress": "〒530-0002 Osaka, Kita Ward, 曽根崎新地1-chōme−8−１９ 梅新ビル １階",
+        "lat": 34.6973631,
+        "lon": 135.50054839999999,
+        "googleMapsUri": "https://maps.google.com/?cid=6866067015397353155&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 41.84,
+        "name_ratio": 0.526,
+        "query": "미타제면소 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 8,
+      "name": "야마짱",
+      "city": "Osaka",
+      "area": "Tennoji",
+      "lat": 34.6486305,
+      "lon": 135.5136089,
+      "location_precision": "exact",
+      "status": "needs_lookup",
+      "cuisine": "takoyaki",
+      "food_type": "문어가 들어간 오사카식 타코야키",
+      "rank": "",
+      "user_note": "텐노지",
+      "source_url": "https://nominatim.openstreetmap.org/",
+      "maps_query": "야마짱 Tennoji Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJ94TD2-_dAGARx2y9dTqAmMY",
+        "displayName": "아베노타코야키 야마짱 본점",
+        "formattedAddress": "1-chōme-2-34 Abenosuji, Abeno Ward, Osaka, 545-0052",
+        "lat": 34.645369699999996,
+        "lon": 135.5142217,
+        "googleMapsUri": "https://maps.google.com/?cid=14310328804541557959&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 45.71,
+        "name_ratio": 0.353,
+        "query": "야마짱 Tennoji Osaka Japan"
+      },
+      {
+        "id": "ChIJA6oBDR_nAGARm31ICgTc2fk",
+        "displayName": "세카이노 야마짱 혼마치점",
+        "formattedAddress": "〒541-0053 Osaka, Chuo Ward, Honmachi, 2-chōme−3−８ Sanko Osaka Hommachi Bldg., B1F",
+        "lat": 34.6833051,
+        "lon": 135.5049764,
+        "googleMapsUri": "https://maps.google.com/?cid=18003662895300771227&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 43.25,
+        "name_ratio": 0.375,
+        "query": "야마짱 Osaka Japan"
+      },
+      {
+        "id": "ChIJWVwtiPvdAGARNuv6OhiMFHc",
+        "displayName": "세카이노 야마짱 텐노지 미오점",
+        "formattedAddress": "〒543-0055 Osaka, Tennoji Ward, Hideninchō, 10−４８ 天王寺ミオプラザ館 4階",
+        "lat": 34.6476541,
+        "lon": 135.5140375,
+        "googleMapsUri": "https://maps.google.com/?cid=8580637225744263990&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 43.11,
+        "name_ratio": 0.316,
+        "query": "야마짱 Tennoji Osaka Japan"
+      },
+      {
+        "id": "ChIJt6IA4fDdAGARS0w2IcSz7TE",
+        "displayName": "다코야키 야마짱 덴노지키타구치점",
+        "formattedAddress": "14-13 Horikoshichō, Tennoji Ward, Osaka, 543-0056",
+        "lat": 34.648604,
+        "lon": 135.5135793,
+        "googleMapsUri": "https://maps.google.com/?cid=3597729332291062859&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 42.0,
+        "name_ratio": 0.3,
+        "query": "야마짱 Tennoji Osaka Japan"
+      },
+      {
+        "id": "ChIJp0yes9pwA2ARC4GsdK2ts1Y",
+        "displayName": "세카이노 야마짱 혼텐",
+        "formattedAddress": "4-chōme-9-6 Sakae, Naka Ward, Nagoya, Aichi 460-0008",
+        "lat": 35.1680054,
+        "lon": 136.9134107,
+        "googleMapsUri": "https://maps.google.com/?cid=6247528068591419659&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 42.0,
+        "name_ratio": 0.429,
+        "query": "야마짱"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 9,
+      "name": "하나타코",
+      "city": "Osaka",
+      "area": "Umeda",
+      "lat": 34.7025,
+      "lon": 135.4959,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "takoyaki",
+      "food_type": "문어가 들어간 오사카식 타코야키",
+      "rank": "",
+      "user_note": "우메다",
+      "source_url": "",
+      "maps_query": "하나타코 Umeda Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJ_5Ip7-zmAGAReRZN8gzci50",
+        "displayName": "하나다코",
+        "formattedAddress": "〒530-0017 Osaka, Kita Ward, Kakudachō, 9−２６ 大阪新梅田食道街 １階",
+        "lat": 34.703155699999996,
+        "lon": 135.49798099999998,
+        "googleMapsUri": "https://maps.google.com/?cid=11352409233880323705&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 61.5,
+        "name_ratio": 0.75,
+        "query": "하나타코 Umeda Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 10,
+      "name": "우마이야",
+      "city": "Osaka",
+      "area": "Tenjinbashisuji?",
+      "lat": 34.705,
+      "lon": 135.5115,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "takoyaki / akashiyaki",
+      "food_type": "타코야키 또는 부드러운 계란 반죽 계열",
+      "rank": "",
+      "user_note": "텐진",
+      "source_url": "",
+      "maps_query": "우마이야 Tenjinbashisuji? Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJvdP2DFWlfDURijiqK2A879A",
+        "displayName": "우마이야",
+        "formattedAddress": "대한민국 서울특별시 천호동 455-8번지 강동구 서울특별시 KR",
+        "lat": 37.538800699999996,
+        "lon": 127.1243716,
+        "googleMapsUri": "https://maps.google.com/?cid=15055318463069960330&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 82.0,
+        "name_ratio": 1.0,
+        "query": "우마이야"
+      },
+      {
+        "id": "ChIJF7UnP71cezUR9Ue3J9QNLXQ",
+        "displayName": "우마이",
+        "formattedAddress": "대한민국 경기도 수원시 장안구 연무동 번지 1층 212-38",
+        "lat": 37.2973062,
+        "lon": 127.0282543,
+        "googleMapsUri": "https://maps.google.com/?cid=8371362487202170869&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 72.0,
+        "name_ratio": 0.857,
+        "query": "우마이야"
+      },
+      {
+        "id": "ChIJu3M3uL-LejURfiX8qyb8_7A",
+        "displayName": "우마이야 본점",
+        "formattedAddress": "대한민국 충청남도 홍성군 홍북읍 애향4길 30",
+        "lat": 36.6582474,
+        "lon": 126.68572449999998,
+        "googleMapsUri": "https://maps.google.com/?cid=12754189912760919422&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 62.91,
+        "name_ratio": 0.727,
+        "query": "우마이야"
+      },
+      {
+        "id": "ChIJFURlN7_mAGARZL3X7kN1shQ",
+        "displayName": "타코야키 우마이야",
+        "formattedAddress": "4-21 Naniwachō, Kita Ward, Osaka, 530-0022",
+        "lat": 34.7075749,
+        "lon": 135.51049609999998,
+        "googleMapsUri": "https://maps.google.com/?cid=1491383361243430244&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 60.08,
+        "name_ratio": 0.615,
+        "query": "우마이야 Tenjinbashisuji? Osaka Japan"
+      },
+      {
+        "id": "ChIJM8SXRExFezURHdXElNTfTbY",
+        "displayName": "우마이야 망포점",
+        "formattedAddress": "대한민국 경기도 수원시 영통구 영통로 157 우마이야 A동 202호",
+        "lat": 37.24191,
+        "lon": 127.05498899999999,
+        "googleMapsUri": "https://maps.google.com/?cid=13136401792231593245&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 58.67,
+        "name_ratio": 0.667,
+        "query": "우마이야"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 11,
+      "name": "도라쿠와나카",
+      "city": "Osaka",
+      "area": "Sennichimae",
+      "lat": 34.6652095,
+      "lon": 135.5034015,
+      "location_precision": "exact",
+      "status": "needs_lookup",
+      "cuisine": "takoyaki",
+      "food_type": "문어가 들어간 오사카식 타코야키",
+      "rank": "",
+      "user_note": "센니치마에",
+      "source_url": "https://nominatim.openstreetmap.org/",
+      "maps_query": "도라쿠와나카 Sennichimae Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJY971B2vnAGAR9orLBLBsj8Y",
+        "displayName": "타코야키도라쿠 와나카 센니치마에점",
+        "formattedAddress": "11-19 Nanbasennichimae, Chuo Ward, Osaka, 542-0075",
+        "lat": 34.665216699999995,
+        "lon": 135.50336289999998,
+        "googleMapsUri": "https://maps.google.com/?cid=14307774044429847286&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 44.0,
+        "name_ratio": 0.5,
+        "query": "도라쿠와나카 Sennichimae Osaka Japan"
+      },
+      {
+        "id": "ChIJUVVjrGznAGARFpS-J5P5SEM",
+        "displayName": "다코야키 도라쿠 와나카 난바점",
+        "formattedAddress": "3-chōme-7-24 Namba, Chuo Ward, Osaka, 542-0076",
+        "lat": 34.666292999999996,
+        "lon": 135.5012918,
+        "googleMapsUri": "https://maps.google.com/?cid=4848399409286648854&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 43.18,
+        "name_ratio": 0.545,
+        "query": "도라쿠와나카 Sennichimae Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 12,
+      "name": "멘야조로쿠",
+      "city": "Osaka",
+      "area": "Den Den Town",
+      "lat": 34.6599,
+      "lon": 135.5052,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "ramen / tsukemen",
+      "food_type": "라멘 또는 츠케멘",
+      "rank": "",
+      "user_note": "덴덴타운",
+      "source_url": "",
+      "maps_query": "멘야조로쿠 Den Den Town Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJVRkzJ2rnAGARQqsC-omixzg",
+        "displayName": "멘야 죠로쿠",
+        "formattedAddress": "6-16 Nanbasennichimae, Chuo Ward, Osaka, 542-0075",
+        "lat": 34.6636708,
+        "lon": 135.5048598,
+        "googleMapsUri": "https://maps.google.com/?cid=4091417499978083138&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 55.91,
+        "name_ratio": 0.727,
+        "query": "멘야조로쿠 Den Den Town Osaka Japan"
+      },
+      {
+        "id": "ChIJyVzivVznAGARY8GD18dpJl0",
+        "displayName": "나니와 멘지로",
+        "formattedAddress": "〒542-0076 Osaka, Chuo Ward, Namba, 4-chōme−1−１７ Time's Place Namba Shopping Mall, 近鉄大阪難波駅 改札内 Time's Place難波 ごちぶらナンバ",
+        "lat": 34.6671012,
+        "lon": 135.498293,
+        "googleMapsUri": "https://maps.google.com/?cid=6712168601677447523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 28.33,
+        "name_ratio": 0.333,
+        "query": "멘야조로쿠 Den Den Town Osaka Japan"
+      },
+      {
+        "id": "ChIJaQRdfWrnAGAR9jmRYYDftVA",
+        "displayName": "라멘 텐도.",
+        "formattedAddress": "1-chōme-19-7 Nipponbashi, Chuo Ward, Osaka, 542-0073",
+        "lat": 34.6662554,
+        "lon": 135.505851,
+        "googleMapsUri": "https://maps.google.com/?cid=5815800236304579062&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 23.0,
+        "name_ratio": 0.2,
+        "query": "멘야조로쿠 Den Den Town Osaka Japan"
+      },
+      {
+        "id": "ChIJv6w_-2fnAGARH2p9wbwos3c",
+        "displayName": "덴덴타운 닛폰바시스지 상점가",
+        "formattedAddress": "4-chōme-9-9 Nipponbashi, Naniwa Ward, Osaka, 556-0005",
+        "lat": 34.6604678,
+        "lon": 135.50619039999998,
+        "googleMapsUri": "https://maps.google.com/?cid=8625282502509816351&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 9.0,
+        "name_ratio": 0.0,
+        "query": "멘야조로쿠 Den Den Town Osaka Japan"
+      },
+      {
+        "id": "ChIJz1iw_Y7nAGAR40ahPIGK1_A",
+        "displayName": "Kuse ga Tsuyoi Menya Reiwa Ramen",
+        "formattedAddress": "〒541-0059 Osaka, Chuo Ward, Bakurōmachi, 4-chōme−7−１ ノバカネイチ本町御堂",
+        "lat": 34.6787412,
+        "lon": 135.4980352,
+        "googleMapsUri": "https://maps.google.com/?cid=17354491976768112355&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 5.0,
+        "name_ratio": 0.0,
+        "query": "멘야조로쿠 Den Den Town Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 13,
+      "name": "551 Horai",
+      "city": "Osaka",
+      "area": "multiple",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "butaman / chinese snacks",
+      "food_type": "돼지고기 만두(부타만)와 중화 스낵",
+      "rank": "",
+      "user_note": "고기만두",
+      "source_url": "",
+      "maps_query": "551 Horai Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJdZFNUxPnAGARewk2xIG6bR0",
+        "displayName": "551 Horai Honten",
+        "formattedAddress": "3-chōme-6-3 Namba, Chuo Ward, Osaka, 542-0076",
+        "lat": 34.6664051,
+        "lon": 135.5013457,
+        "googleMapsUri": "https://maps.google.com/?cid=2120556066066794875&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 65.4,
+        "name_ratio": 0.72,
+        "query": "551 Horai Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJM_xARG3nAGARpi3wSipC0K8",
+        "displayName": "551Horai Panchan",
+        "formattedAddress": "〒556-0016 Osaka, Naniwa Ward, Motomachi, 1-chōme−10−２ パンチャン",
+        "lat": 34.6640271,
+        "lon": 135.4977136,
+        "googleMapsUri": "https://maps.google.com/?cid=12668698501206519206&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 47.8,
+        "name_ratio": 0.64,
+        "query": "551 Horai Osaka Japan"
+      },
+      {
+        "id": "ChIJG2jxlY3mAGARPjsfmlWBLPg",
+        "displayName": "551 Horai JR Osaka Sta. Midosuji Entrance Shop",
+        "formattedAddress": "3-chōme-1-1 Umeda, Kita Ward, Osaka, 530-0001",
+        "lat": 34.7028223,
+        "lon": 135.4972915,
+        "googleMapsUri": "https://maps.google.com/?cid=17882810425039338302&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 40.33,
+        "name_ratio": 0.333,
+        "query": "551 Horai Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJy1pGdo3mAGARdwilOj5Eezk",
+        "displayName": "551호라이 JR 오사카 중앙구",
+        "formattedAddress": "3-chōme-1-1 Umeda, Kita Ward, Osaka, 530-0001",
+        "lat": 34.702292799999995,
+        "lon": 135.4960323,
+        "googleMapsUri": "https://maps.google.com/?cid=4141979316359858295&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 31.92,
+        "name_ratio": 0.385,
+        "query": "551 Horai Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ1cGZJ5LmAGARPU9q_ENUZVA",
+        "displayName": "551 호라이 한큐 오사카 우메다역점",
+        "formattedAddress": "1-chōme-1-2 Shibata, Kita Ward, Osaka, 530-0012",
+        "lat": 34.705258199999996,
+        "lon": 135.49830699999998,
+        "googleMapsUri": "https://maps.google.com/?cid=5793129146656378685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 24.31,
+        "name_ratio": 0.276,
+        "query": "551 Horai Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 14,
+      "name": "니쿠고로",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "wagyu / sukiyaki",
+      "food_type": "와규와 스키야키 중심",
+      "rank": "",
+      "user_note": "와규 스키야키 1600엔, 술 90엔",
+      "source_url": "",
+      "maps_query": "니쿠고로 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJGdNOYw7nAGARLm-7jZAKiPk",
+        "displayName": "니쿠고로 텐마점",
+        "formattedAddress": "〒530-0041 Osaka, Kita Ward, Tenjinbashi, 5-chōme−2−６ ベニスビル ２Ｆ",
+        "lat": 34.7072949,
+        "lon": 135.5118267,
+        "googleMapsUri": "https://maps.google.com/?cid=17980633128246144814&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 61.67,
+        "name_ratio": 0.667,
+        "query": "니쿠고로 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJa3g9Lw7nAGARe36sYsyvGfg",
+        "displayName": "야키니쿠 고리짱 우메다 본점",
+        "formattedAddress": "〒530-0027 Osaka, Kita Ward, Dōyamachō, 8−２１ 石本ビル B1",
+        "lat": 34.7037239,
+        "lon": 135.5032994,
+        "googleMapsUri": "https://maps.google.com/?cid=17877513488187555451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 27.11,
+        "name_ratio": 0.316,
+        "query": "니쿠고로 Osaka Japan"
+      },
+      {
+        "id": "ChIJO6PgbVXnAGARFm67WEMTwaI",
+        "displayName": "니쿠나베 카메다",
+        "formattedAddress": "4-chōme-8-1 Minamisenba, Chuo Ward, Osaka, 542-0081",
+        "lat": 34.6778415,
+        "lon": 135.4995118,
+        "googleMapsUri": "https://maps.google.com/?cid=11727676084621897238&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 26.33,
+        "name_ratio": 0.333,
+        "query": "니쿠고로 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJtW5I7RXnAGARoJH5OfmjWCI",
+        "displayName": "야키니쿠 마루 신사이바시",
+        "formattedAddress": "周防ウイングスビル 1F, 2-chōme-1-27 Higashishinsaibashi, Chuo Ward, Osaka, 542-0083",
+        "lat": 34.6718428,
+        "lon": 135.50575569999998,
+        "googleMapsUri": "https://maps.google.com/?cid=2474908286054928800&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 19.47,
+        "name_ratio": 0.235,
+        "query": "니쿠고로 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJeUDXoTDnAGARtJ3MPx78MFo",
+        "displayName": "오사카 할랄 와규 스테이크 야키니쿠 Furusato",
+        "formattedAddress": "〒542-0085 Osaka, Chuo Ward, Shinsaibashisuji, 2-chōme−3−３１ 1階",
+        "lat": 34.6703093,
+        "lon": 135.5016059,
+        "googleMapsUri": "https://maps.google.com/?cid=6498971469145218484&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 13.75,
+        "name_ratio": 0.125,
+        "query": "니쿠고로 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 15,
+      "name": "덴푸라 마키노",
+      "city": "Osaka",
+      "area": "multiple",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "tempura",
+      "food_type": "튀김 정식",
+      "rank": "",
+      "user_note": "덴푸라 정식 1300엔",
+      "source_url": "",
+      "maps_query": "덴푸라 마키노 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJG5kdVWvnAGARBBIcvmt0_9I",
+        "displayName": "덴푸라 마키노 난바센니치마에점",
+        "formattedAddress": "〒542-0076 Osaka, Chuo Ward, Namba, 3-chōme−3−４ 難波日大ビル １階",
+        "lat": 34.6664593,
+        "lon": 135.5019007,
+        "googleMapsUri": "https://maps.google.com/?cid=15203998873125917188&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 57.61,
+        "name_ratio": 0.609,
+        "query": "덴푸라 마키노 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 16,
+      "name": "야키니쿠 코지마",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "yakiniku / hamburg steak",
+      "food_type": "야키니쿠 또는 함바그 정식",
+      "rank": "",
+      "user_note": "함바그 정식 1500엔",
+      "source_url": "",
+      "maps_query": "야키니쿠 코지마 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJN8tJZQDnAGARDn74T1Kzu5U",
+        "displayName": "야키니쿠 코지마 하나레 오사카우메다점",
+        "formattedAddress": "〒530-0014 Osaka, Kita Ward, Tsurunochō, 4−４ A棟1F",
+        "lat": 34.7092217,
+        "lon": 135.5017174,
+        "googleMapsUri": "https://maps.google.com/?cid=10789414498406530574&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 57.0,
+        "name_ratio": 0.571,
+        "query": "야키니쿠 코지마 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJVzSjAADnAGAReceuZ_3f_40",
+        "displayName": "야키니쿠 코지마 하나레 오사카 아메무라",
+        "formattedAddress": "〒542-0086 Osaka, Chuo Ward, Nishishinsaibashi, 2-chōme−10−３３ ＤＩＥＳＥＬ",
+        "lat": 34.671711,
+        "lon": 135.498918,
+        "googleMapsUri": "https://maps.google.com/?cid=10232143157868283769&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 55.62,
+        "name_ratio": 0.552,
+        "query": "야키니쿠 코지마 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJq-A9FxnnAGARzlqOOhvTnks",
+        "displayName": "焼肉こじま 離れ ハービスPLAZA 大阪",
+        "formattedAddress": "〒530-0001 Osaka, Kita Ward, Umeda, 2-chōme−5−２５ B2F",
+        "lat": 34.6984414,
+        "lon": 135.4926413,
+        "googleMapsUri": "https://maps.google.com/?cid=5449024713064864462&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 9.83,
+        "name_ratio": 0.069,
+        "query": "야키니쿠 코지마 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJef_T_ivnAGAR0SJIYUD1xzw",
+        "displayName": "Yakiniku Kojima Hanare Amemura",
+        "formattedAddress": "〒542-0086 Osaka, Chuo Ward, Nishishinsaibashi, 2-chōme−10−33 2 3F",
+        "lat": 34.671712,
+        "lon": 135.49891890000004,
+        "googleMapsUri": "https://maps.google.com/?cid=4379738819499926225&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 8.68,
+        "name_ratio": 0.053,
+        "query": "야키니쿠 코지마 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJzR73Ar3nAGAR9ZQjAOI7QxA",
+        "displayName": "Yakiniku Kojima Fukushima",
+        "formattedAddress": "5-chōme-6-13 Fukushima, Fukushima Ward, Osaka, 553-0003",
+        "lat": 34.6965036,
+        "lon": 135.487528,
+        "googleMapsUri": "https://maps.google.com/?cid=1171846169897440501&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 7.24,
+        "name_ratio": 0.061,
+        "query": "야키니쿠 코지마 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 17,
+      "name": "오루노 히츠토부",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "closed_or_uncertain",
+      "cuisine": "onigiri",
+      "food_type": "주먹밥 전문",
+      "rank": "",
+      "user_note": "오니기리 맛집, 아침, 폐업 메모",
+      "source_url": "",
+      "maps_query": "오루노 히츠토부 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJt_Bx7x3nAGARobr1HJ73T0w",
+        "displayName": "아지킷쵸 분부안",
+        "formattedAddress": "〒541-0053 Osaka, Chuo Ward, Honmachi, 3-chōme−6−４ Osaka Metro本町ビル 地下1階",
+        "lat": 34.6831599,
+        "lon": 135.501014,
+        "googleMapsUri": "https://maps.google.com/?cid=5498885928505424545&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 20.5,
+        "name_ratio": 0.25,
+        "query": "오루노 히츠토부 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ5eac3IzdAGARsHO1U8uJkNY",
+        "displayName": "토비타신치",
+        "formattedAddress": "〒557-0001 Osaka, Nishinari Ward, Sannō, 3-chōme−1−１３ 飛田会館",
+        "lat": 34.644074499999995,
+        "lon": 135.5063879,
+        "googleMapsUri": "https://maps.google.com/?cid=15461009027138679728&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 13.77,
+        "name_ratio": 0.154,
+        "query": "오루노 히츠토부 Osaka Japan"
+      },
+      {
+        "id": "ChIJN2IMlPPmAGARcdublJnDNb0",
+        "displayName": "TOYOBO Co., Ltd. Head Office",
+        "formattedAddress": "1-chōme-13-13番1号 Umeda, Kita Ward, Osaka, 530-0001",
+        "lat": 34.7010243,
+        "lon": 135.4972541,
+        "googleMapsUri": "https://maps.google.com/?cid=13634018511324699505&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 9.24,
+        "name_ratio": 0.061,
+        "query": "오루노 히츠토부 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJzZ2aB9bnAGARsh4MtBaYQuo",
+        "displayName": "Yoru no Hitotsubu Shinsaibashi",
+        "formattedAddress": "〒542-0083 Osaka, Chuo Ward, Higashishinsaibashi, 1-chōme−17−３ 2F",
+        "lat": 34.6732464,
+        "lon": 135.5031443,
+        "googleMapsUri": "https://maps.google.com/?cid=16880221576615435954&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 8.68,
+        "name_ratio": 0.053,
+        "query": "오루노 히츠토부 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ8aOogQTnAGARQxxj1fp3874",
+        "displayName": "Hizono",
+        "formattedAddress": "〒550-0013 Osaka, Nishi Ward, Shinmachi, 1-chōme−22−１９ 桑名ビル 1F",
+        "lat": 34.6766138,
+        "lon": 135.49471219999998,
+        "googleMapsUri": "https://maps.google.com/?cid=13759473205752568899&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 3.0,
+        "name_ratio": 0.0,
+        "query": "오루노 히츠토부 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 18,
+      "name": "스시마츠이",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "sushi",
+      "food_type": "스시",
+      "rank": "",
+      "user_note": "스시",
+      "source_url": "",
+      "maps_query": "스시마츠이 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJjUQcIPz1ejURlszNgSTGzPs",
+        "displayName": "스시마츠",
+        "formattedAddress": "대한민국 충청남도 홍성군 홍북읍 청사로174번길 25",
+        "lat": 36.6603904,
+        "lon": 126.6810268,
+        "googleMapsUri": "https://maps.google.com/?cid=18144094858867756182&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 72.22,
+        "name_ratio": 0.889,
+        "query": "스시마츠이"
+      },
+      {
+        "id": "ChIJB1AJFKnnAGAR_ethfJtlyNI",
+        "displayName": "키타신치 스시 마츠이",
+        "formattedAddress": "〒530-0002 Osaka, Kita Ward, Sonezakishinchi, 1-chōme−9−８ 地下1F",
+        "lat": 34.6977257,
+        "lon": 135.49897030000002,
+        "googleMapsUri": "https://maps.google.com/?cid=15188501461788126205&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 46.75,
+        "name_ratio": 0.625,
+        "query": "스시마츠이 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ75ad-hLnAGARNRUUFvDfvGo",
+        "displayName": "스시 마츠이 오사카우메다점",
+        "formattedAddress": "〒530-0057 Osaka, Kita Ward, Sonezaki, 2-chōme−16−２２ 7F",
+        "lat": 34.7018269,
+        "lon": 135.500517,
+        "googleMapsUri": "https://maps.google.com/?cid=7691268485897524533&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 39.84,
+        "name_ratio": 0.526,
+        "query": "스시마츠이 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ4VC3bpXnAGARLdkvybnOCt8",
+        "displayName": "Sushi & Tempura TAIMATSU",
+        "formattedAddress": "Tsuji Grand Bldg., 6-2 Nanbasennichimae, Chuo Ward, Osaka, 542-0075",
+        "lat": 34.6635069,
+        "lon": 135.5050951,
+        "googleMapsUri": "https://maps.google.com/?cid=16071885517564664109&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 3.0,
+        "name_ratio": 0.0,
+        "query": "스시마츠이 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ_c0V1BXeAGARa1ppIY_FMYw",
+        "displayName": "Matsu Sushi",
+        "formattedAddress": "6-chōme-10-13 Nakagawa, Ikuno Ward, Osaka, 544-0005",
+        "lat": 34.6536806,
+        "lon": 135.5419634,
+        "googleMapsUri": "https://maps.google.com/?cid=10102072657700280939&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 3.0,
+        "name_ratio": 0.0,
+        "query": "스시마츠이 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 19,
+      "name": "혼마치 스시 타쿠마",
+      "city": "Osaka",
+      "area": "Hommachi",
+      "lat": 34.684,
+      "lon": 135.5017,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "sushi",
+      "food_type": "스시",
+      "rank": "",
+      "user_note": "스시",
+      "source_url": "",
+      "maps_query": "혼마치 스시 타쿠마 Hommachi Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJ32mRjB7nAGARmjAt54PjjLs",
+        "displayName": "Sushi Takuma",
+        "formattedAddress": "〒541-0054 Osaka, Chuo Ward, Minamihonmachi, 3-chōme−2−１１ 日幸ビル 1F",
+        "lat": 34.682277899999995,
+        "lon": 135.50278989999998,
+        "googleMapsUri": "https://maps.google.com/?cid=13514426737490735258&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 15.36,
+        "name_ratio": 0.091,
+        "query": "혼마치 스시 타쿠마 Hommachi Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 20,
+      "name": "Ishimon",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "sushi / seafood",
+      "food_type": "스시 또는 해산물",
+      "rank": "",
+      "user_note": "스시 후보",
+      "source_url": "",
+      "maps_query": "Ishimon Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJH3TKoPLmAGARIUS-YsFyPOs",
+        "displayName": "Ishimon",
+        "formattedAddress": "〒530-0001 Osaka, Kita Ward, Umeda, 1-chōme−3−１ B2F",
+        "lat": 34.6985673,
+        "lon": 135.4966997,
+        "googleMapsUri": "https://maps.google.com/?cid=16950549272426595361&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "Ishimon Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJQyHU49TnAGARNylfTQrOyMQ",
+        "displayName": "Ishimon",
+        "formattedAddress": "〒530-0001 Osaka, Kita Ward, Umeda, 1-chōme−3−１ 大阪駅前第一ビル B2F",
+        "lat": 34.6988803,
+        "lon": 135.4964604,
+        "googleMapsUri": "https://maps.google.com/?cid=14179809970419083575&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "Ishimon Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJUY7OYwDnAGARy7c0r2NfWuw",
+        "displayName": "Ishimon 03",
+        "formattedAddress": "〒553-0003 Osaka, Fukushima Ward, Fukushima, 1-26MF−1 住友不動産西梅田ビル 9c",
+        "lat": 34.7015611,
+        "lon": 135.49301480000003,
+        "googleMapsUri": "https://maps.google.com/?cid=17031029822600820683&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 72.65,
+        "name_ratio": 0.824,
+        "query": "Ishimon Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 21,
+      "name": "Rian",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "sushi / seafood",
+      "food_type": "스시 또는 해산물",
+      "rank": "",
+      "user_note": "스시 후보",
+      "source_url": "",
+      "maps_query": "Rian Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJjwu66WLdAGARctxqupvvvjQ",
+        "displayName": "rian",
+        "formattedAddress": "〒558-0011 Osaka, Sumiyoshi Ward, Karita, 2-chōme−15−１０ 長居パークハイツ 1F",
+        "lat": 34.6046522,
+        "lon": 135.5135019,
+        "googleMapsUri": "https://maps.google.com/?cid=3800738587673812082&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "Rian Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJITZKJQDnAGARbJuC3si3G_0",
+        "displayName": "Bar Rian",
+        "formattedAddress": "2-chōme-7-11 Higashishinsaibashi, Chuo Ward, Osaka, 542-0083",
+        "lat": 34.670462500000006,
+        "lon": 135.502999,
+        "googleMapsUri": "https://maps.google.com/?cid=18238373189321399148&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 61.67,
+        "name_ratio": 0.667,
+        "query": "Rian Osaka Japan"
+      },
+      {
+        "id": "ChIJxf5dmUGvfDURYZffd1gSbc4",
+        "displayName": "Rian Pub Bar",
+        "formattedAddress": "대한민국 서울특별시 강동구 천호동 414",
+        "lat": 37.539435700000006,
+        "lon": 127.1271731,
+        "googleMapsUri": "https://maps.google.com/?cid=14874565315452180321&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 45.0,
+        "name_ratio": 0.5,
+        "query": "Rian"
+      },
+      {
+        "id": "ChIJt7r4s7a9fDURqfhXlBNfULs",
+        "displayName": "Rian Building",
+        "formattedAddress": "대한민국 서울특별시 동대문구 왕산로19가길 16",
+        "lat": 37.579074899999995,
+        "lon": 127.0323002,
+        "googleMapsUri": "https://maps.google.com/?cid=13497392620927187113&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 42.94,
+        "name_ratio": 0.471,
+        "query": "Rian"
+      },
+      {
+        "id": "ChIJW4aNV_XmAGARbCR4Rs9mLRI",
+        "displayName": "Lien",
+        "formattedAddress": "〒531-0075 Osaka, Kita Ward, Ōyodominami, 1-chōme−11−５ B1階",
+        "lat": 34.7012365,
+        "lon": 135.48750569999999,
+        "googleMapsUri": "https://maps.google.com/?cid=1309816107061224556&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 38.0,
+        "name_ratio": 0.5,
+        "query": "Rian Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 22,
+      "name": "타마타케 우동",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "udon",
+      "food_type": "우동",
+      "rank": "",
+      "user_note": "미쉐린",
+      "source_url": "",
+      "maps_query": "타마타케 우동 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJwZjEZZLmAGARqn10m-0q53Q",
+        "displayName": "가마타케우동",
+        "formattedAddress": "〒530-0017 Osaka, Kita Ward, Kakudachō, 9−２５ JR大阪駅高架下 新梅田食道街1階",
+        "lat": 34.7033482,
+        "lon": 135.4980349,
+        "googleMapsUri": "https://maps.google.com/?cid=8423748828023520682&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 56.85,
+        "name_ratio": 0.769,
+        "query": "타마타케 우동 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ8XYDTkJDezUR_I7qpT5MhSk",
+        "displayName": "카마타케제면소",
+        "formattedAddress": "대한민국 경기도 수원시 율전동 283-4 성균관대역",
+        "lat": 37.2999964,
+        "lon": 126.971629,
+        "googleMapsUri": "https://maps.google.com/?cid=2991881359412858620&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 28.0,
+        "name_ratio": 0.429,
+        "query": "타마타케 우동"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 23,
+      "name": "브라운",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "wagyu",
+      "food_type": "와규",
+      "rank": "",
+      "user_note": "와규 메뉴",
+      "source_url": "",
+      "maps_query": "브라운 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJlXCdt4pQezURerC4ov1eG3Y",
+        "displayName": "카페브라운",
+        "formattedAddress": "대한민국 용인시 기흥구 중동 705번지 B동 103호 라온 705 용인시 경기도 KR",
+        "lat": 37.2749357,
+        "lon": 127.1466805,
+        "googleMapsUri": "https://maps.google.com/?cid=8510500364296433786&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 62.5,
+        "name_ratio": 0.75,
+        "query": "브라운"
+      },
+      {
+        "id": "ChIJW1jSU6FEezURwPfa5ZseDM8",
+        "displayName": "브라운브루",
+        "formattedAddress": "대한민국 경기도 수원시 영통구 매탄동 번지 109호 1264-2 강희타운",
+        "lat": 37.259830199999996,
+        "lon": 127.0449087,
+        "googleMapsUri": "https://maps.google.com/?cid=14919333320496707520&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 62.5,
+        "name_ratio": 0.75,
+        "query": "브라운"
+      },
+      {
+        "id": "ChIJ9RDW4e5FezUREOqYCOmjwro",
+        "displayName": "브라운스케이프",
+        "formattedAddress": "대한민국 경기도 화성시 반월동 352",
+        "lat": 37.2289173,
+        "lon": 127.06749740000001,
+        "googleMapsUri": "https://maps.google.com/?cid=13457498857803409936&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 52.0,
+        "name_ratio": 0.6,
+        "query": "브라운"
+      },
+      {
+        "id": "ChIJlXN-FwBFezURWjR_mfslANQ",
+        "displayName": "김성민커피 브라운",
+        "formattedAddress": "대한민국 경기도 수원시 영통구 덕영대로 1527",
+        "lat": 37.2462316,
+        "lon": 127.05802650000001,
+        "googleMapsUri": "https://maps.google.com/?cid=15276251698582991962&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 45.0,
+        "name_ratio": 0.5,
+        "query": "브라운"
+      },
+      {
+        "id": "ChIJF4pM_Y3mAGARtA_Kf1KIKPg",
+        "displayName": "요도바시 카메라 멀티미디어 우메다",
+        "formattedAddress": "1-1 Ōfukachō, Kita Ward, Osaka, 530-0011",
+        "lat": 34.7040943,
+        "lon": 135.496268,
+        "googleMapsUri": "https://maps.google.com/?cid=17881692208387198900&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 11.67,
+        "name_ratio": 0.095,
+        "query": "브라운 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 24,
+      "name": "라멘 쿠온",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "ramen",
+      "food_type": "일본식 라멘",
+      "rank": "",
+      "user_note": "미쉐린",
+      "source_url": "",
+      "maps_query": "라멘 쿠온 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJmZMgHB7nAGARJ_ue9uLu1jU",
+        "displayName": "라멘 쿠온",
+        "formattedAddress": "〒541-0055 Osaka, Chuo Ward, Senbachūō, 1-chōme−4−３ 船場センタービル 3号館地下2階",
+        "lat": 34.6819305,
+        "lon": 135.5067901,
+        "googleMapsUri": "https://maps.google.com/?cid=3879550787593894695&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "라멘 쿠온 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 25,
+      "name": "마구로마루",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "tuna rice bowl",
+      "food_type": "참치덮밥",
+      "rank": "",
+      "user_note": "참치덮밥집",
+      "source_url": "",
+      "maps_query": "마구로마루 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJbTcr2qq7fDUR5hqBeH8xIlI",
+        "displayName": "마구로",
+        "formattedAddress": "대한민국 서울특별시",
+        "lat": 37.5953167,
+        "lon": 127.0825414,
+        "googleMapsUri": "https://maps.google.com/?cid=5918347283870587622&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 62.5,
+        "name_ratio": 0.75,
+        "query": "마구로마루"
+      },
+      {
+        "id": "ChIJeSFtOqjgAGARuvaZlJyMXTk",
+        "displayName": "마루",
+        "formattedAddress": "2-chōme-9-15 Tsuruhashi, Ikuno Ward, Osaka, 544-0031",
+        "lat": 34.6638924,
+        "lon": 135.5329133,
+        "googleMapsUri": "https://maps.google.com/?cid=4133614637131888314&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 55.0,
+        "name_ratio": 0.571,
+        "query": "마구로마루 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJY5mZ55nyGGARFr9LsKUL6mI",
+        "displayName": "마구로 마트",
+        "formattedAddress": "5-chōme-50-3 Nakano, Nakano City, Tokyo 164-0001",
+        "lat": 35.7095541,
+        "lon": 139.66650439999998,
+        "googleMapsUri": "https://maps.google.com/?cid=7127522166522494742&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 48.91,
+        "name_ratio": 0.727,
+        "query": "마구로마루"
+      },
+      {
+        "id": "ChIJsbJ8wrCjfDUR6V7YS89llXQ",
+        "displayName": "마구로센",
+        "formattedAddress": "대한민국 서울특별시 용산구 대사관로31길 24",
+        "lat": 37.5342722,
+        "lon": 127.0059806,
+        "googleMapsUri": "https://maps.google.com/?cid=8400732620934635241&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 44.67,
+        "name_ratio": 0.667,
+        "query": "마구로마루"
+      },
+      {
+        "id": "ChIJR7fu50HnAGARgKJx0AHLN-s",
+        "displayName": "마구로노엔토키",
+        "formattedAddress": "1-chōme-21-7 Nipponbashi, Chuo Ward, Osaka, 542-0073",
+        "lat": 34.6656307,
+        "lon": 135.5069585,
+        "googleMapsUri": "https://maps.google.com/?cid=16949238931284664960&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 38.0,
+        "name_ratio": 0.5,
+        "query": "마구로마루 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 26,
+      "name": "Salmon kat nanba",
+      "city": "Osaka",
+      "area": "Namba",
+      "lat": 34.6663,
+      "lon": 135.5019,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "salmon gimbap / rolls",
+      "food_type": "연어 중심 롤/김밥류",
+      "rank": "",
+      "user_note": "연어김밥",
+      "source_url": "",
+      "maps_query": "Salmon kat nanba Namba Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJGUWcWJLnAGARO1jhRI9ddv4",
+        "displayName": "Salmon Kat Namba",
+        "formattedAddress": "〒542-0074 Osaka, Chuo Ward, Sennichimae, 1-chōme−9−１２ B1",
+        "lat": 34.6673702,
+        "lon": 135.50343890000002,
+        "googleMapsUri": "https://maps.google.com/?cid=18335945802802878523&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 74.62,
+        "name_ratio": 0.938,
+        "query": "Salmon kat nanba Namba Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 27,
+      "name": "串揚げあとわあびこ店",
+      "city": "Osaka",
+      "area": "Abiko",
+      "lat": 34.5998,
+      "lon": 135.51,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "kushikatsu",
+      "food_type": "꼬치 튀김",
+      "rank": "",
+      "user_note": "런치 오마카세",
+      "source_url": "",
+      "maps_query": "串揚げあとわあびこ店 Abiko Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJNfittHTdAGARX5OR3X6-Dxk",
+        "displayName": "串揚げ あとわ あびこ店",
+        "formattedAddress": "9-chōme-15-39 Karita, Sumiyoshi Ward, Osaka, 558-0011",
+        "lat": 34.5979923,
+        "lon": 135.5132446,
+        "googleMapsUri": "https://maps.google.com/?cid=1805871427691320159&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 72.64,
+        "name_ratio": 0.909,
+        "query": "串揚げあとわあびこ店 Abiko Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 28,
+      "name": "생선요리 츠무기야",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "seafood / tuna bowl",
+      "food_type": "해산물 또는 참치덮밥",
+      "rank": "",
+      "user_note": "일월 휴무, 참치덮밥",
+      "source_url": "",
+      "maps_query": "생선요리 츠무기야 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJVz_qFy3nAGARIQxaCgUMdn4",
+        "displayName": "생선요리 츠무기야",
+        "formattedAddress": "2-chōme-1-1 Funakoshichō, Chuo Ward, Osaka, 540-0036",
+        "lat": 34.6877254,
+        "lon": 135.5135803,
+        "googleMapsUri": "https://maps.google.com/?cid=9112484111818820641&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 85.0,
+        "name_ratio": 1.0,
+        "query": "생선요리 츠무기야 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 29,
+      "name": "쿠로노 야키니꾸",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "yakiniku",
+      "food_type": "일본식 고기구이",
+      "rank": "",
+      "user_note": "",
+      "source_url": "",
+      "maps_query": "쿠로노 야키니꾸 Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJz2-gChXnAGARzNYQ4AbHnb8",
+        "displayName": "코코로 야끼니꾸",
+        "formattedAddress": "2-chōme-3-9 Higashishinsaibashi, Chuo Ward, Osaka, 542-0083",
+        "lat": 34.6703385,
+        "lon": 135.5051109,
+        "googleMapsUri": "https://maps.google.com/?cid=13807410864930739916&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 46.75,
+        "name_ratio": 0.625,
+        "query": "쿠로노 야키니꾸 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJbyP7VE3nAGARe0Dk5mVX-Hk",
+        "displayName": "오키니 료타로(야키니쿠)",
+        "formattedAddress": "3-chōme-1-13 Bakurōmachi, Chuo Ward, Osaka, 541-0059",
+        "lat": 34.6785692,
+        "lon": 135.5025317,
+        "googleMapsUri": "https://maps.google.com/?cid=8788870767990554747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 38.0,
+        "name_ratio": 0.5,
+        "query": "쿠로노 야키니꾸 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJqcW9uSDnAGARJWxcPieKPYA",
+        "displayName": "와규 야키니쿠 큐",
+        "formattedAddress": "〒542-0074 Osaka, Chuo Ward, Sennichimae, 1-chōme−7−７ Leesビル 102",
+        "lat": 34.668064699999995,
+        "lon": 135.5038607,
+        "googleMapsUri": "https://maps.google.com/?cid=9240693911588727845&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 35.94,
+        "name_ratio": 0.471,
+        "query": "쿠로노 야키니꾸 Osaka Japan"
+      },
+      {
+        "id": "ChIJnzYH92rnAGARYVdO-P2-G2o",
+        "displayName": "우라난바 야키니쿠 토라니츠노 난바 본점",
+        "formattedAddress": "〒542-0074 Osaka, Chuo Ward, Sennichimae, 2-chōme−3−２４ 久富千日プラザ ２０７号",
+        "lat": 34.6659061,
+        "lon": 135.5046705,
+        "googleMapsUri": "https://maps.google.com/?cid=7645914790393436001&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 24.31,
+        "name_ratio": 0.276,
+        "query": "쿠로노 야키니꾸 Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJz4xNHADnAGARoaVF40so25w",
+        "displayName": "야키니쿠 호르몬 쿠로노",
+        "formattedAddress": "4-34 Nanbasennichimae, Chuo Ward, Osaka, 542-0075",
+        "lat": 34.6645737,
+        "lon": 135.5050164,
+        "googleMapsUri": "https://maps.google.com/?cid=11302671996217042337&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 24.0,
+        "name_ratio": 0.3,
+        "query": "쿠로노 야키니꾸 Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 30,
+      "name": "NikonikoNabe",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "nabe / wagyu buffet",
+      "food_type": "전골 또는 와규 무제한",
+      "rank": "",
+      "user_note": "와규 무제한 추정",
+      "source_url": "",
+      "maps_query": "NikonikoNabe Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJHSTieojnAGAR2jh79fQxj5k",
+        "displayName": "Nikoniko Nabe Dotonbori",
+        "formattedAddress": "〒542-0071 Osaka, Chuo Ward, Dōtonbori, 1-chōme−6−１５ コムラード・ドウトンビル 8F",
+        "lat": 34.6688289,
+        "lon": 135.50181139999998,
+        "googleMapsUri": "https://maps.google.com/?cid=11065117737632872666&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 51.0,
+        "name_ratio": 0.686,
+        "query": "NikonikoNabe Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 31,
+      "name": "Homuraya",
+      "city": "Osaka",
+      "area": "unknown",
+      "lat": 34.6937,
+      "lon": 135.5023,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "izakaya",
+      "food_type": "이자카야",
+      "rank": "",
+      "user_note": "300엔 안주",
+      "source_url": "",
+      "maps_query": "Homuraya Osaka Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJd8wwEDXnAGAR3isiNDhj5pY",
+        "displayName": "Sushi Homura",
+        "formattedAddress": "2-chōme-1-13 Imabashi, Chuo Ward, Osaka, 541-0042",
+        "lat": 34.690692,
+        "lon": 135.50573029999998,
+        "googleMapsUri": "https://maps.google.com/?cid=10873487443376614366&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 45.0,
+        "name_ratio": 0.6,
+        "query": "Homuraya Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJ8Rxz1y_nAGARv24DFLwl-94",
+        "displayName": "Wakon Homura",
+        "formattedAddress": "〒540-0012 Osaka, Chuo Ward, Tanimachi, 3-chōme−2−１４ ヨーク谷町ビル １F",
+        "lat": 34.6829457,
+        "lon": 135.5175882,
+        "googleMapsUri": "https://maps.google.com/?cid=16067477585294225087&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 45.0,
+        "name_ratio": 0.6,
+        "query": "Homuraya Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJx1k-MsXnAGAR3RbUV83pLpk",
+        "displayName": "夜景×鉄板焼 和牛 焔 ～HOMURA～",
+        "formattedAddress": "〒530-0001 Osaka, Kita Ward, Umeda, 1-chōme−1−３ Osaka Station 3 Building, 33階",
+        "lat": 34.698943299999996,
+        "lon": 135.4991767,
+        "googleMapsUri": "https://maps.google.com/?cid=11038016804882749149&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 37.31,
+        "name_ratio": 0.462,
+        "query": "Homuraya Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJLfqB0mX7AGARYnr2ePLSkoU",
+        "displayName": "鉄板焼 和牛 焔 ～HOMURA～ 千里中央",
+        "formattedAddress": "〒560-0082 Osaka, Toyonaka, Shinsenri Higashimachi, 1-chōme−3−３ せんちゅうパル ４F",
+        "lat": 34.8099152,
+        "lon": 135.4949766,
+        "googleMapsUri": "https://maps.google.com/?cid=9624987292497508962&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 35.0,
+        "name_ratio": 0.429,
+        "query": "Homuraya Osaka Osaka Japan"
+      },
+      {
+        "id": "ChIJN_MVWTXnAGARTdnRC0u4ZKg",
+        "displayName": "Seafood Japanese Cuisine Mahoraya",
+        "formattedAddress": "〒541-0052 Osaka, Chuo Ward, Azuchimachi, 3-chōme−3−５ イケガミビル B1",
+        "lat": 34.6843719,
+        "lon": 135.5018105,
+        "googleMapsUri": "https://maps.google.com/?cid=12134025928503318861&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 25.49,
+        "name_ratio": 0.293,
+        "query": "Homuraya Osaka Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 32,
+      "name": "오니기리 고리짱",
+      "city": "Osaka",
+      "area": "Shinsekai",
+      "lat": 34.6525,
+      "lon": 135.5066,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "onigiri",
+      "food_type": "주먹밥 전문",
+      "rank": "",
+      "user_note": "신세카이",
+      "source_url": "",
+      "maps_query": "오니기리 고리짱 Shinsekai Osaka Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJNSYMr4bnAGARsYIlYMtx3_Y",
+        "displayName": "오니기리 고리짱 난바점",
+        "formattedAddress": "〒542-0081 Osaka, Chuo Ward, Minamisenba, 3-chōme−5−２８ 富士ビル南船場 1階",
+        "lat": 34.6758595,
+        "lon": 135.5021961,
+        "googleMapsUri": "https://maps.google.com/?cid=17789062171442119345&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 73.0,
+        "name_ratio": 0.8,
+        "query": "오니기리 고리짱 Osaka Japan"
+      },
+      {
+        "id": "ChIJTWQ6sMSRQTURE1lDXHGDz0k",
+        "displayName": "오니기리 고리짱 후쿠오카",
+        "formattedAddress": "〒810-0004 Fukuoka, Chuo Ward, Watanabedōri, 3-chōme−7−１４ あきの館 1F",
+        "lat": 33.585977,
+        "lon": 130.40433679999998,
+        "googleMapsUri": "https://maps.google.com/?cid=5318614207850305811&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 65.33,
+        "name_ratio": 0.762,
+        "query": "오니기리 고리짱 Osaka Japan"
+      },
+      {
+        "id": "ChIJiYu2PADnAGARK1vy9Ia38IY",
+        "displayName": "오니기리 고리짱 에비스요코초점",
+        "formattedAddress": "3-chōme-4-16 Ebisuhigashi, Naniwa Ward, Osaka, 556-0002",
+        "lat": 34.649416699999996,
+        "lon": 135.5059109,
+        "googleMapsUri": "https://maps.google.com/?cid=9723473385755925291&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 63.67,
+        "name_ratio": 0.667,
+        "query": "오니기리 고리짱 Shinsekai Osaka Japan"
+      },
+      {
+        "id": "ChIJ3Wt2BkXnAGARqFboUphPMEk",
+        "displayName": "오니기리 고리짱 나가자키초 본점",
+        "formattedAddress": "〒530-0016 Osaka, Kita Ward, Nakazaki, 1-chōme−5−２０ ＴＫビル １階",
+        "lat": 34.7071179,
+        "lon": 135.5058786,
+        "googleMapsUri": "https://maps.google.com/?cid=5273802679295432360&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 61.8,
+        "name_ratio": 0.64,
+        "query": "오니기리 고리짱 Osaka Japan"
+      },
+      {
+        "id": "ChIJa3g9Lw7nAGARe36sYsyvGfg",
+        "displayName": "야키니쿠 고리짱 우메다 본점",
+        "formattedAddress": "〒530-0027 Osaka, Kita Ward, Dōyamachō, 8−２１ 石本ビル B1",
+        "lat": 34.7037239,
+        "lon": 135.5032994,
+        "googleMapsUri": "https://maps.google.com/?cid=17877513488187555451&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 35.43,
+        "name_ratio": 0.435,
+        "query": "오니기리 고리짱 Osaka Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 33,
+      "name": "Wagyu Ryotei Bungo Gion",
+      "city": "Kyoto",
+      "area": "Gion",
+      "lat": 35.0037,
+      "lon": 135.7751,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "wagyu / kaiseki",
+      "food_type": "와규 중심 코스/가이세키",
+      "rank": "",
+      "user_note": "교토",
+      "source_url": "",
+      "maps_query": "Wagyu Ryotei Bungo Gion Gion Kyoto Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJY4asrzoJAWAR2IXEH8vruGk",
+        "displayName": "Wagyu Ryotei Bungo Gion",
+        "formattedAddress": "56 Motoyoshichō, Higashiyama Ward, Kyoto, 605-0087",
+        "lat": 35.0058007,
+        "lon": 135.7741863,
+        "googleMapsUri": "https://maps.google.com/?cid=7618098027341055448&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 91.0,
+        "name_ratio": 1.0,
+        "query": "Wagyu Ryotei Bungo Gion Gion Kyoto Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 34,
+      "name": "Niku no Odakichi Arashiyama",
+      "city": "Kyoto",
+      "area": "Arashiyama",
+      "lat": 35.015,
+      "lon": 135.6777,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "wagyu / beef specialty",
+      "food_type": "소고기 전문점",
+      "rank": "",
+      "user_note": "교토",
+      "source_url": "",
+      "maps_query": "Niku no Odakichi Arashiyama Arashiyama Kyoto Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJf373K4ipAWAReGImr71A4Z4",
+        "displayName": "Niku No Odakichi Arashiyama",
+        "formattedAddress": "3-56 Sagatenryūji Susukinobabachō, Ukyo Ward, Kyoto, 616-8385",
+        "lat": 35.0142042,
+        "lon": 135.67757029999999,
+        "googleMapsUri": "https://maps.google.com/?cid=11448502911184036472&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 91.0,
+        "name_ratio": 1.0,
+        "query": "Niku no Odakichi Arashiyama Kyoto Japan"
+      },
+      {
+        "id": "ChIJ49PvUVQHAWARTAF7WU_Wqqs",
+        "displayName": "Arashiyama",
+        "formattedAddress": "〒616-0007 교토부 교토시 우쿄구 아라시야마 겐로쿠잔초",
+        "lat": 35.009449,
+        "lon": 135.666773,
+        "googleMapsUri": "https://maps.google.com/?cid=12369934962818482508&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 53.84,
+        "name_ratio": 0.541,
+        "query": "Niku no Odakichi Arashiyama Arashiyama Kyoto Japan"
+      },
+      {
+        "id": "ChIJBWr75f-pAWAR492_2TiaRyM",
+        "displayName": "Wagyu Okada Ya | Kyoto Arashiyama",
+        "formattedAddress": "〒616-8385 Kyoto, Ukyo Ward, Sagatenryūji Susukinobabachō, ３−２５ 嵐山スクエアウエストパークW5",
+        "lat": 35.0143963,
+        "lon": 135.67720670000003,
+        "googleMapsUri": "https://maps.google.com/?cid=2542170083636010467&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 50.03,
+        "name_ratio": 0.586,
+        "query": "Niku no Odakichi Arashiyama Arashiyama Kyoto Japan"
+      },
+      {
+        "id": "ChIJZZvBz9GrAWARj4p5--MkByM",
+        "displayName": "Arashiyama Miyoshitei",
+        "formattedAddress": "〒616-8385 Kyoto, Ukyo Ward, Sagatenryūji Susukinobabachō, 3−25−２ 嵐山スクエア 1F",
+        "lat": 35.0144415,
+        "lon": 135.6770613,
+        "googleMapsUri": "https://maps.google.com/?cid=2524026677759675023&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 38.17,
+        "name_ratio": 0.417,
+        "query": "Niku no Odakichi Arashiyama Arashiyama Kyoto Japan"
+      },
+      {
+        "id": "ChIJI-H-2GAHAWARdFiaTI012pI",
+        "displayName": "Wagyu Donburi-ya Nikuni",
+        "formattedAddress": "3-19 Arashiyama Higashiichikawachō, Nishikyo Ward, Kyoto, 616-0002",
+        "lat": 35.010063699999996,
+        "lon": 135.682594,
+        "googleMapsUri": "https://maps.google.com/?cid=10581829155452246132&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 25.8,
+        "name_ratio": 0.24,
+        "query": "Niku no Odakichi Arashiyama Arashiyama Kyoto Japan"
+      }
+    ]
+  },
+  {
+    "place": {
+      "id": 35,
+      "name": "Pontocho Yakiniku Kiraku",
+      "city": "Kyoto",
+      "area": "Pontocho",
+      "lat": 35.0064,
+      "lon": 135.7704,
+      "location_precision": "area",
+      "status": "needs_lookup",
+      "cuisine": "yakiniku",
+      "food_type": "일본식 고기구이",
+      "rank": "",
+      "user_note": "교토",
+      "source_url": "",
+      "maps_query": "Pontocho Yakiniku Kiraku Pontocho Kyoto Japan"
+    },
+    "candidates": [
+      {
+        "id": "ChIJ6RCxKQAJAWARv9B4FWBcJYk",
+        "displayName": "Pontocho Yakiniku Kiraku",
+        "formattedAddress": "139-2 Wakamatsuchō, Nakagyo Ward, Kyoto, 604-8011",
+        "lat": 35.0071961,
+        "lon": 135.77116619999998,
+        "googleMapsUri": "https://maps.google.com/?cid=9882406525081276607&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+        "score": 91.0,
+        "name_ratio": 1.0,
+        "query": "Pontocho Yakiniku Kiraku Pontocho Kyoto Japan"
+      }
+    ]
+  }
+]
