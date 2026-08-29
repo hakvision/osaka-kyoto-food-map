@@ -22,6 +22,7 @@ const state = {
   userMarker: null,
   infoWindow: null,
   googleReady: false,
+  activePlace: null,
 };
 
 const cityFilter = document.querySelector('#cityFilter');
@@ -46,8 +47,19 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     clickableIcons: true,
     gestureHandling: 'greedy',
     language: 'ko',
+    styles: [
+      { elementType: 'geometry', stylers: [{ color: '#101c30' }] },
+      { elementType: 'labels.text.fill', stylers: [{ color: '#d8e5ff' }] },
+      { elementType: 'labels.text.stroke', stylers: [{ color: '#08111e' }] },
+      { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#a8bddf' }] },
+      { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#1f365a' }] },
+      { featureType: 'road.arterial', elementType: 'geometry', stylers: [{ color: '#27436f' }] },
+      { featureType: 'transit.station', elementType: 'labels.text.fill', stylers: [{ color: '#8ef0c4' }] },
+      { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0b2746' }] },
+    ],
   });
   state.infoWindow = new google.maps.InfoWindow();
+  state.map.addListener('click', () => closeDetail());
 
   const res = await fetch('./data/places.json');
   state.places = await res.json();
@@ -94,6 +106,7 @@ function renderLandmarks() {
     marker.addListener('click', () => {
       state.infoWindow.setContent(`<b>${escapeHtml(spot.name)}</b><br>${escapeHtml(spot.note)}`);
       state.infoWindow.open({ anchor: marker, map: state.map });
+      closeDetail();
     });
     state.landmarkMarkers.push(marker);
   });
@@ -113,8 +126,11 @@ function bindEvents() {
   cityFilter.addEventListener('change', applyFilters);
   cuisineFilter.addEventListener('change', applyFilters);
   searchInput.addEventListener('input', applyFilters);
-  closeSheet.addEventListener('click', () => detailSheet.classList.add('hidden'));
+  closeSheet.addEventListener('click', closeDetail);
   locateBtn.addEventListener('click', locateUser);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeDetail();
+  });
 }
 
 function applyFilters() {
@@ -129,6 +145,11 @@ function applyFilters() {
     const searchOk = !term || haystack.includes(term);
     return cityOk && cuisineOk && searchOk;
   });
+
+  if (state.activePlace && !state.filtered.some(place => place.name === state.activePlace.name)) {
+    closeDetail();
+    return;
+  }
 
   renderMarkers();
   renderList();
@@ -159,9 +180,7 @@ function renderMarkers() {
     });
 
     marker.addListener('click', () => {
-      state.infoWindow.setContent(`<b>${escapeHtml(place.name)}</b><br>${escapeHtml(place.food_type)}<br>${escapeHtml(locationLabel(place))}<br>${escapeHtml(place.city_ko)} · ${escapeHtml(place.area_ko)}`);
-      state.infoWindow.open({ anchor: marker, map: state.map });
-      openDetail(place);
+      focusPlace(place, marker);
     });
 
     state.markers.push(marker);
@@ -181,13 +200,19 @@ function renderMarkers() {
   }
 
   if (hasBounds) {
-    state.map.fitBounds(bounds, 56);
+    state.map.fitBounds(bounds, 64);
     if (state.filtered.length === 1) state.map.setZoom(15);
   }
 }
 
 function renderList() {
   placeList.innerHTML = '';
+
+  if (!state.filtered.length) {
+    placeList.innerHTML = '<p class="empty-state">조건에 맞는 장소가 없어. 검색어를 바꾸거나 도시 필터를 풀어봐.</p>';
+    return;
+  }
+
   state.filtered.forEach(place => {
     const fragment = cardTemplate.content.cloneNode(true);
     fragment.querySelector('.card-area').textContent = `${place.city_ko} · ${place.area_ko}`;
@@ -202,10 +227,11 @@ function renderList() {
     if (place.area && place.area !== 'unknown') meta.appendChild(makeChip(place.area_ko, ''));
 
     const card = fragment.querySelector('.place-card');
+    if (state.activePlace?.name === place.name) card.classList.add('active');
     card.addEventListener('click', () => {
-      openDetail(place);
       state.map.panTo({ lat: place.lat, lng: place.lon });
       if (state.map.getZoom() < 15) state.map.setZoom(15);
+      openDetail(place);
     });
     placeList.appendChild(fragment);
   });
@@ -214,10 +240,24 @@ function renderList() {
 function updateResultMeta() {
   const exact = state.filtered.filter(place => place.location_precision === 'exact').length;
   const currentCity = cityFilter.value === 'all' ? '전체' : cityLabel(cityFilter.value);
-  resultMeta.textContent = `${currentCity} ${state.filtered.length}곳 · 정확 위치 ${exact}곳 · 난바역/오사카역/교토역 등 주요 기준점 표시`;
+  resultMeta.textContent = `${currentCity} ${state.filtered.length}곳 · 정확 위치 ${exact}곳 · 지도 위 플로팅 상세 보기`;
+}
+
+function focusPlace(place, marker) {
+  state.infoWindow.setContent(`
+    <div style="min-width:160px">
+      <b>${escapeHtml(place.name)}</b><br>
+      ${escapeHtml(place.food_type)}<br>
+      ${escapeHtml(locationLabel(place))}<br>
+      <span>${escapeHtml(place.city_ko)} · ${escapeHtml(place.area_ko)}</span>
+    </div>
+  `);
+  state.infoWindow.open({ anchor: marker, map: state.map });
+  openDetail(place);
 }
 
 function openDetail(place) {
+  state.activePlace = place;
   detailSheet.classList.remove('hidden');
   detailContent.innerHTML = `
     <p class="card-area">${place.city_ko} · ${place.area_ko}</p>
@@ -235,6 +275,14 @@ function openDetail(place) {
     </div>
     ${place.source_url ? `<p><a href="${place.source_url}" target="_blank" rel="noreferrer">좌표 참고 출처</a></p>` : ''}
   `;
+  renderList();
+}
+
+function closeDetail() {
+  state.activePlace = null;
+  detailSheet.classList.add('hidden');
+  state.infoWindow?.close();
+  renderList();
 }
 
 function locateUser() {
@@ -264,6 +312,7 @@ function locateUser() {
       });
       renderList();
       renderMarkers();
+      if (state.activePlace) openDetail(state.activePlace);
       locateBtn.disabled = false;
       locateBtn.textContent = '거리 갱신 완료';
     },
