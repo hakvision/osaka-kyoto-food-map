@@ -69,7 +69,7 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     closeDrawerPanelAndDetail({ keepDetail: false });
   });
 
-  const res = await fetch('./data/places.json');
+  const res = await fetch('./data/places.json?v=googlefix-2525ec7');
   state.places = await res.json();
   translateDataset();
   populateCuisineFilter();
