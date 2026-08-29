@@ -287,12 +287,13 @@ select, input {
   }
 
   .detail-sheet {
-    left: 50%;
-    right: auto;
-    bottom: 16px;
-    transform: translateX(-50%);
-    width: min(520px, calc(100vw - 460px));
-    max-height: min(48dvh, 460px);
+    left: 16px;
+    right: 442px;
+    bottom: 84px;
+    transform: none;
+    width: auto;
+    max-width: 620px;
+    max-height: min(46dvh, 460px);
   }
 }
 
