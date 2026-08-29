@@ -69,7 +69,7 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     closeDrawerPanelAndDetail({ keepDetail: false });
   });
 
-  const res = await fetch('./data/places.json?v=menu-category-2');
+  const res = await fetch('./data/places.json?v=menu-category-3');
   state.places = await res.json();
   translateDataset();
   populateCuisineFilter();
@@ -413,6 +413,7 @@ function inferMenuCategory(place) {
   if (text.includes('takoyaki') || text.includes('akashiyaki')) return '타코야키';
   if (text.includes('butaman') || text.includes('만두')) return '만두';
   if (text.includes('sukiyaki') || text.includes('nabe') || text.includes('전골')) return '스키야키/전골';
+  if (text.includes('unagi') || text.includes('장어')) return '장어/우나기';
   if (text.includes('tsukemen')) return '츠케멘';
   if (text.includes('ramen')) return '라멘';
   if (text.includes('udon') || text.includes('soba')) return '우동/소바';
@@ -437,6 +438,7 @@ function categoryOrderValue(category) {
     '타코야키',
     '만두',
     '스키야키/전골',
+    '장어/우나기',
     '라멘',
     '츠케멘',
     '우동/소바',
@@ -490,6 +492,7 @@ function displayArea(area) {
     Temmabashi: '덴마바시',
     Dotonbori: '도톤보리',
     Shinsaibashi: '신사이바시',
+    'Kuromon Market': '쿠로몬시장',
   };
   return map[area] || area;
 }
