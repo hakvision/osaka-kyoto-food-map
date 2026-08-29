@@ -1,0 +1,734 @@
+[
+  {
+    "input": {
+      "name": "유카리 오코노미야끼 난바",
+      "city": "Osaka",
+      "area": "Namba",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "okonomiyaki / teppan",
+      "notes": "오코노미야끼, 야끼소바, 스페셜 메뉴 메모"
+    },
+    "queries": [
+      "유카리 오코노미야끼 난바, Namba, Osaka, Japan",
+      "유카리 오코노미야끼 난바, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "타쿠마 우동",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "udon / soba / tempura",
+      "notes": "우동전골 1250엔, 자루소바+모둠튀김, 쫀득한 면"
+    },
+    "queries": [
+      "타쿠마 우동, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "나니와 신풍라멘",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "ramen",
+      "notes": "심야 웨이팅, 카라아게/교자 서비스, 미소/돈코츠, 차항 맛있음"
+    },
+    "queries": [
+      "나니와 신풍라멘, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "큐카츠 토미타",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "gyukatsu",
+      "notes": "줄 김, 4시쯤 상대적으로 한산, 30초 이상 굽지 말기"
+    },
+    "queries": [
+      "큐카츠 토미타, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "포미에",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "katsudon / curry",
+      "notes": "가츠동 전문점, 카레 가라아게돈, 짭짤한 편"
+    },
+    "queries": [
+      "포미에, Osaka, Japan"
+    ],
+    "results": [
+      {
+        "place_id": 264837162,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 674040283,
+        "lat": "34.7618592",
+        "lon": "135.5279368",
+        "category": "amenity",
+        "type": "cafe",
+        "place_rank": 30,
+        "importance": 6.130540932321687e-05,
+        "addresstype": "amenity",
+        "name": "ぽみえ",
+        "display_name": "ぽみえ, 大阪高槻京都線, 吹東町, 吹田市, 大阪府, 564-0023, 日本",
+        "boundingbox": [
+          "34.7617964",
+          "34.7619238",
+          "135.5278765",
+          "135.5279912"
+        ]
+      },
+      {
+        "place_id": 268520301,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 3884804404,
+        "lat": "34.6588667",
+        "lon": "135.5051732",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 5.728618295562703e-05,
+        "addresstype": "amenity",
+        "name": "ポミエ",
+        "display_name": "ポミエ, 浪速区日本橋5-17-20, 日本橋商店会, 日本橋四丁目, 浪速区, 大阪市, 大阪府, 556-0005, 日本",
+        "boundingbox": [
+          "34.6588167",
+          "34.6589167",
+          "135.5051232",
+          "135.5052232"
+        ]
+      }
+    ]
+  },
+  {
+    "input": {
+      "name": "카스우동",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "udon / izakaya / sashimi",
+      "notes": "밤에는 이자카야, 사시미 강추, 육수 호평"
+    },
+    "queries": [
+      "카스우동, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "미타제면소",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "tsukemen",
+      "notes": "온/냉, 매운 정도, 면 굵기 선택"
+    },
+    "queries": [
+      "미타제면소, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "야마짱",
+      "city": "Osaka",
+      "area": "Tennoji",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "takoyaki",
+      "notes": "텐노지"
+    },
+    "queries": [
+      "야마짱, Tennoji, Osaka, Japan",
+      "야마짱, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "하나타코",
+      "city": "Osaka",
+      "area": "Umeda",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "takoyaki",
+      "notes": "우메다"
+    },
+    "queries": [
+      "하나타코, Umeda, Osaka, Japan",
+      "하나타코, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "우마이야",
+      "city": "Osaka",
+      "area": "Tenjinbashisuji?",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "takoyaki / akashiyaki",
+      "notes": "텐진"
+    },
+    "queries": [
+      "우마이야, Tenjinbashisuji?, Osaka, Japan",
+      "우마이야, Osaka, Japan",
+      "우마이야, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "도라쿠와나카",
+      "city": "Osaka",
+      "area": "Sennichimae",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "takoyaki",
+      "notes": "센니치마에"
+    },
+    "queries": [
+      "도라쿠와나카, Sennichimae, Osaka, Japan",
+      "도라쿠와나카, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "멘야조로쿠",
+      "city": "Osaka",
+      "area": "Den Den Town",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "ramen / tsukemen",
+      "notes": "덴덴타운"
+    },
+    "queries": [
+      "멘야조로쿠, Den Den Town, Osaka, Japan",
+      "멘야조로쿠, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "551 Horai",
+      "city": "Osaka",
+      "area": "multiple",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "butaman / chinese snacks",
+      "notes": "고기만두"
+    },
+    "queries": [
+      "551 Horai, Osaka, Japan"
+    ],
+    "results": [
+      {
+        "place_id": 268230129,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 12592785029,
+        "lat": "34.7908682",
+        "lon": "135.4414425",
+        "category": "amenity",
+        "type": "fast_food",
+        "place_rank": 30,
+        "importance": 6.0432593270725834e-05,
+        "addresstype": "amenity",
+        "name": "551 HORAI",
+        "display_name": "551 HORAI, 阪神高速11号池田線, 空港二丁目, 池田市, 大阪府, 563-0033, 日本",
+        "boundingbox": [
+          "34.7908182",
+          "34.7909182",
+          "135.4413925",
+          "135.4414925"
+        ]
+      },
+      {
+        "place_id": 419706965,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13897930059,
+        "lat": "34.7207997",
+        "lon": "135.4821668",
+        "category": "shop",
+        "type": "deli",
+        "place_rank": 30,
+        "importance": 5.728618295562703e-05,
+        "addresstype": "shop",
+        "name": "551 HORAI",
+        "display_name": "551 HORAI, 国道176号, 十三本町三丁目, 淀川区, 大阪市, 大阪府, 532-0024, 日本",
+        "boundingbox": [
+          "34.7207497",
+          "34.7208497",
+          "135.4821168",
+          "135.4822168"
+        ]
+      },
+      {
+        "place_id": 422170807,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13979948986,
+        "lat": "34.7334391",
+        "lon": "135.5012510",
+        "category": "amenity",
+        "type": "fast_food",
+        "place_rank": 30,
+        "importance": 5.728618295562703e-05,
+        "addresstype": "amenity",
+        "name": "551 HORAI",
+        "display_name": "551 HORAI, 1, 新大阪地下道, 宮原一丁目, 淀川区, 大阪市, 大阪府, 533-0033, 日本",
+        "boundingbox": [
+          "34.7333891",
+          "34.7334891",
+          "135.5012010",
+          "135.5013010"
+        ]
+      }
+    ]
+  },
+  {
+    "input": {
+      "name": "니쿠고로",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "wagyu / sukiyaki",
+      "notes": "와규 스키야키 1600엔, 술 90엔"
+    },
+    "queries": [
+      "니쿠고로, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "덴푸라 마키노",
+      "city": "Osaka",
+      "area": "multiple",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "tempura",
+      "notes": "덴푸라 정식 1300엔"
+    },
+    "queries": [
+      "덴푸라 마키노, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "야키니쿠 코지마",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "yakiniku / hamburg steak",
+      "notes": "함바그 정식 1500엔"
+    },
+    "queries": [
+      "야키니쿠 코지마, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "오루노 히츠토부",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "closed_or_uncertain",
+      "cuisine_guess": "onigiri",
+      "notes": "오니기리 맛집, 아침, 폐업 메모"
+    },
+    "queries": [
+      "오루노 히츠토부, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "스시마츠이",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "sushi",
+      "notes": "스시"
+    },
+    "queries": [
+      "스시마츠이, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "혼마치 스시 타쿠마",
+      "city": "Osaka",
+      "area": "Hommachi",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "sushi",
+      "notes": "스시"
+    },
+    "queries": [
+      "혼마치 스시 타쿠마, Hommachi, Osaka, Japan",
+      "혼마치 스시 타쿠마, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Ishimon",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "sushi / seafood",
+      "notes": "스시 후보"
+    },
+    "queries": [
+      "Ishimon, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Rian",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "sushi / seafood",
+      "notes": "스시 후보"
+    },
+    "queries": [
+      "Rian, Osaka, Japan"
+    ],
+    "results": [
+      {
+        "place_id": 422859138,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1539241991,
+        "lat": "34.5326061",
+        "lon": "135.4499710",
+        "category": "building",
+        "type": "apartments",
+        "place_rank": 30,
+        "importance": 6.485313191419879e-05,
+        "addresstype": "building",
+        "name": "リアン鳳",
+        "display_name": "リアン鳳, 島泉筋, 鳳西町三丁, 西区, 堺市, 大阪府, 590-0078, 日本",
+        "boundingbox": [
+          "34.5325488",
+          "34.5326560",
+          "135.4498788",
+          "135.4500632"
+        ]
+      },
+      {
+        "place_id": 267823016,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 742764329,
+        "lat": "34.7594143",
+        "lon": "135.5209903",
+        "category": "amenity",
+        "type": "social_facility",
+        "place_rank": 30,
+        "importance": 6.130540932321687e-05,
+        "addresstype": "amenity",
+        "name": "地域活動支援センター りあん",
+        "display_name": "地域活動支援センター りあん, 吹田停車場線, 西の庄町, 吹田市, 大阪府, 564-0032, 日本",
+        "boundingbox": [
+          "34.7593247",
+          "34.7594683",
+          "135.5209275",
+          "135.5210760"
+        ]
+      },
+      {
+        "place_id": 268023025,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 1481629819,
+        "lat": "34.6347991",
+        "lon": "135.5974885",
+        "category": "building",
+        "type": "apartments",
+        "place_rank": 30,
+        "importance": 5.993209735251419e-05,
+        "addresstype": "building",
+        "name": "リアン宮町",
+        "display_name": "リアン宮町, (旧)大阪中央環状線, 山城町二丁目, 八尾市, 大阪府, 581-0802, 日本",
+        "boundingbox": [
+          "34.6347369",
+          "34.6348746",
+          "135.5973267",
+          "135.5976503"
+        ]
+      }
+    ]
+  },
+  {
+    "input": {
+      "name": "타마타케 우동",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "udon",
+      "notes": "미쉐린"
+    },
+    "queries": [
+      "타마타케 우동, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "브라운",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "wagyu",
+      "notes": "와규 메뉴"
+    },
+    "queries": [
+      "브라운, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "라멘 쿠온",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "ramen",
+      "notes": "미쉐린"
+    },
+    "queries": [
+      "라멘 쿠온, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "마구로마루",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "tuna rice bowl",
+      "notes": "참치덮밥집"
+    },
+    "queries": [
+      "마구로마루, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Salmon kat nanba",
+      "city": "Osaka",
+      "area": "Namba",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "salmon gimbap / rolls",
+      "notes": "연어김밥"
+    },
+    "queries": [
+      "Salmon kat nanba, Namba, Osaka, Japan",
+      "Salmon kat nanba, Osaka, Japan"
+    ],
+    "results": [
+      {
+        "place_id": 265241101,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13438209801,
+        "lat": "34.6674318",
+        "lon": "135.5032279",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 5.728618295562703e-05,
+        "addresstype": "amenity",
+        "name": "Salmon Kat Namba",
+        "display_name": "Salmon Kat Namba, 9-12 B1, 千日前商店街, 千日前一丁目, 中央区, 大阪市, 大阪府, 542-0074, 日本",
+        "boundingbox": [
+          "34.6673818",
+          "34.6674818",
+          "135.5031779",
+          "135.5032779"
+        ]
+      }
+    ]
+  },
+  {
+    "input": {
+      "name": "串揚げあとわあびこ店",
+      "city": "Osaka",
+      "area": "Abiko",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "kushikatsu",
+      "notes": "런치 오마카세"
+    },
+    "queries": [
+      "串揚げあとわあびこ店, Abiko, Osaka, Japan",
+      "串揚げあとわあびこ店, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "생선요리 츠무기야",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "seafood / tuna bowl",
+      "notes": "일월 휴무, 참치덮밥"
+    },
+    "queries": [
+      "생선요리 츠무기야, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "쿠로노 야키니꾸",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "yakiniku",
+      "notes": ""
+    },
+    "queries": [
+      "쿠로노 야키니꾸, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "NikonikoNabe",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "nabe / wagyu buffet",
+      "notes": "와규 무제한 추정"
+    },
+    "queries": [
+      "NikonikoNabe, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Homuraya",
+      "city": "Osaka",
+      "area": "unknown",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "izakaya",
+      "notes": "300엔 안주"
+    },
+    "queries": [
+      "Homuraya, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "오니기리 고리짱",
+      "city": "Osaka",
+      "area": "Shinsekai",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "onigiri",
+      "notes": "신세카이"
+    },
+    "queries": [
+      "오니기리 고리짱, Shinsekai, Osaka, Japan",
+      "오니기리 고리짱, Osaka, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Wagyu Ryotei Bungo Gion",
+      "city": "Kyoto",
+      "area": "Gion",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "wagyu / kaiseki",
+      "notes": "교토"
+    },
+    "queries": [
+      "Wagyu Ryotei Bungo Gion, Gion, Kyoto, Japan",
+      "Wagyu Ryotei Bungo Gion, Kyoto, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Niku no Odakichi Arashiyama",
+      "city": "Kyoto",
+      "area": "Arashiyama",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "wagyu / beef specialty",
+      "notes": "교토"
+    },
+    "queries": [
+      "Niku no Odakichi Arashiyama, Arashiyama, Kyoto, Japan",
+      "Niku no Odakichi Arashiyama, Kyoto, Japan"
+    ],
+    "results": []
+  },
+  {
+    "input": {
+      "name": "Pontocho Yakiniku Kiraku",
+      "city": "Kyoto",
+      "area": "Pontocho",
+      "country": "Japan",
+      "status": "needs_lookup",
+      "cuisine_guess": "yakiniku",
+      "notes": "교토"
+    },
+    "queries": [
+      "Pontocho Yakiniku Kiraku, Pontocho, Kyoto, Japan",
+      "Pontocho Yakiniku Kiraku, Kyoto, Japan"
+    ],
+    "results": []
+  }
+]

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Osaka Kyoto Food Map</title>
+  <meta name="description" content="오사카/교토 맛집 메모를 모바일 지도 앱으로 정리한 개인용 가이드">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Mobile-first food guide</p>
+        <h1>오사카 · 교토 맛집맵</h1>
+        <p class="subtitle">구글맵 느낌으로 정리한 개인용 맛집 지도. 확대/축소, 현재 위치 기준 거리, 지도 검색 링크 지원.</p>
+      </div>
+      <button id="locateBtn" class="primary-btn" type="button">내 위치로 거리 보기</button>
+    </header>
+
+    <section class="controls">
+      <label>
+        <span>도시</span>
+        <select id="cityFilter">
+          <option value="all">전체</option>
+          <option value="Osaka">오사카</option>
+          <option value="Kyoto">교토</option>
+        </select>
+      </label>
+      <label>
+        <span>음식</span>
+        <select id="cuisineFilter">
+          <option value="all">전체</option>
+        </select>
+      </label>
+      <label class="search-wrap">
+        <span>검색</span>
+        <input id="searchInput" type="search" placeholder="가게명, 지역, 음식 검색">
+      </label>
+    </section>
+
+    <main class="main-layout">
+      <section class="map-panel">
+        <div id="map"></div>
+        <div class="map-hint">핀 색상: <b>정확 위치</b> · <b>대략 위치</b> · <b>폐업/불명</b></div>
+      </section>
+
+      <aside class="list-panel">
+        <div class="list-header">
+          <h2>장소 목록</h2>
+          <p id="resultMeta"></p>
+        </div>
+        <div id="placeList" class="place-list"></div>
+      </aside>
+    </main>
+  </div>
+
+  <section id="detailSheet" class="detail-sheet hidden" aria-live="polite">
+    <button id="closeSheet" class="sheet-close" type="button">닫기</button>
+    <div id="detailContent"></div>
+  </section>
+
+  <template id="cardTemplate">
+    <article class="place-card">
+      <div class="card-top">
+        <div>
+          <p class="card-area"></p>
+          <h3 class="card-title"></h3>
+        </div>
+        <span class="card-rank"></span>
+      </div>
+      <p class="card-food"></p>
+      <p class="card-note"></p>
+      <div class="card-meta"></div>
+    </article>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="./app.js" defer></script>
+</body>
+</html>
