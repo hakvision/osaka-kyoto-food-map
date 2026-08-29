@@ -12,6 +12,31 @@ const LANDMARKS = [
   { name: '폰토초', city: 'Kyoto', area: 'Pontocho', lat: 35.0064, lon: 135.7704, note: '가모가와 옆 번화가' },
 ];
 
+const FEATURED_PLACE_NAMES = new Set([
+  '유카리 오코노미야끼 난바',
+  'Ishimon',
+  '스시마츠이',
+  '혼마치 스시 타쿠마',
+  '마구로마루',
+  '생선요리 츠무기야',
+  '우오토요 (쿠로몬시장 할머니장어)',
+  'うなぎ串焼きいづも難波',
+  '우마이야',
+  '하나타코',
+  '551 Horai (난바 본점)',
+  '551 Horai (신사이바시 주변)',
+  'NikonikoNabe',
+  '니쿠고로',
+  '나니와 신풍라멘',
+  '라멘 쿠온',
+  '미타제면소 (센니치마에)',
+  '미타제면소 (난바CITY 남관)',
+  '큐카츠 토미타',
+  'Niku no Odakichi Arashiyama',
+  'Pontocho Yakiniku Kiraku',
+  'Wagyu Ryotei Bungo Gion',
+]);
+
 const state = {
   places: [],
   filtered: [],
@@ -69,7 +94,7 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     closeDrawerPanelAndDetail({ keepDetail: false });
   });
 
-  const res = await fetch('./data/places.json?v=menu-category-3');
+  const res = await fetch('./data/places.json?v=menu-highlight-1');
   state.places = await res.json();
   translateDataset();
   populateCuisineFilter();
@@ -391,8 +416,12 @@ function clearMarkers(markers) {
   markers.forEach(marker => marker.setMap(null));
 }
 
+function isFeaturedPlace(place) {
+  return FEATURED_PLACE_NAMES.has(place.name);
+}
+
 function markerColor(place) {
-  if (place.status === 'closed_or_uncertain') return '#8f96a3';
+  if (!isFeaturedPlace(place) || place.status === 'closed_or_uncertain') return '#8f96a3';
   if (place.location_precision === 'exact') return '#73f0c2';
   return '#ffd479';
 }
