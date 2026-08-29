@@ -69,7 +69,7 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     closeDrawerPanelAndDetail({ keepDetail: false });
   });
 
-  const res = await fetch('./data/places.json?v=googlefix-2525ec7');
+  const res = await fetch('./data/places.json?v=user-curation-2');
   state.places = await res.json();
   translateDataset();
   populateCuisineFilter();
@@ -409,9 +409,11 @@ function displayArea(area) {
     Pontocho: '폰토초',
     'Kyoto Station': '교토역',
     'Tenjinbashisuji?': '텐진바시스지 추정',
+    Tenjinbashisuji: '텐진바시스지',
     Ebisucho: '에비스초',
     Temmabashi: '덴마바시',
     Dotonbori: '도톤보리',
+    Shinsaibashi: '신사이바시',
   };
   return map[area] || area;
 }
