@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Osaka Kyoto Food Map</title>
   <meta name="description" content="오사카/교토 맛집 메모를 모바일 지도 앱으로 정리한 개인용 가이드">
-  <link rel="stylesheet" href="./styles.css?v=white-theme-1">
+  <link rel="stylesheet" href="./styles.css?v=itinerary-1">
 </head>
 <body>
   <div class="app-shell">
@@ -25,11 +25,25 @@
       </div>
 
       <div class="drawer-actions">
+        <button class="drawer-action" type="button" data-panel="itineraryPanel">일정</button>
         <button class="drawer-action" type="button" data-panel="filterPanel">필터</button>
         <button class="drawer-action" type="button" data-panel="listPanel">장소 목록</button>
         <button class="drawer-action" type="button" data-panel="legendPanel">범례</button>
       </div>
     </aside>
+
+    <section id="itineraryPanel" class="overlay-panel itinerary-panel hidden" aria-label="여행 일정">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Trip tabs</p>
+          <h2>날짜별 큰동선</h2>
+          <p class="subtitle">날짜/요일 탭을 누르면 그날의 대략 동선과 적어둔 메모만 빠르게 보여줌.</p>
+        </div>
+        <button class="panel-close" type="button" data-close-panel="itineraryPanel">닫기</button>
+      </div>
+      <div id="itineraryTabs" class="itinerary-tabs"></div>
+      <div id="itineraryContent" class="itinerary-content"></div>
+    </section>
 
     <section id="filterPanel" class="overlay-panel hidden" aria-label="지도 필터">
       <div class="panel-header">
@@ -107,6 +121,6 @@
     </article>
   </template>
 
-  <script src="./app.js?v=white-theme-1" defer></script>
+  <script src="./app.js?v=itinerary-1" defer></script>
 </body>
 </html>

@@ -263,6 +263,143 @@ select, input {
   line-height: 1.45;
 }
 
+.itinerary-panel {
+  left: 12px;
+  right: 12px;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  max-height: min(62dvh, 640px);
+  overflow: auto;
+}
+
+.itinerary-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  margin-top: 14px;
+  padding-bottom: 4px;
+}
+
+.itinerary-tab {
+  border: 1px solid var(--border);
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 14px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.itinerary-tab.active {
+  background: linear-gradient(135deg, #2563eb, #4070ff);
+  color: #fff;
+  border-color: transparent;
+}
+
+.itinerary-content {
+  margin-top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.itinerary-summary {
+  border-radius: 20px;
+  padding: 14px;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid var(--border);
+}
+
+.itinerary-summary h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.itinerary-summary p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.route-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.route-chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 10px;
+  background: rgba(15, 118, 110, 0.10);
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.itinerary-list {
+  display: grid;
+  gap: 12px;
+}
+
+.itinerary-item {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
+  border-radius: 20px;
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+
+.itinerary-num {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #2563eb, #4070ff);
+  color: #fff;
+  font-weight: 800;
+}
+
+.itinerary-time {
+  margin: 0;
+  color: var(--accent-2);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.itinerary-title {
+  margin: 4px 0 0;
+  font-size: 17px;
+}
+
+.itinerary-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.itinerary-meta {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+@media (min-width: 920px) {
+  .itinerary-panel {
+    left: 392px;
+    right: auto;
+    top: 16px;
+    bottom: 16px;
+    width: min(520px, calc(100vw - 440px));
+    max-height: none;
+  }
+}
+
 .detail-sheet {
   left: 12px;
   right: 12px;

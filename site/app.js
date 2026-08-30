@@ -12,6 +12,61 @@ const LANDMARKS = [
   { name: '폰토초', city: 'Kyoto', area: 'Pontocho', lat: 35.0064, lon: 135.7704, note: '가모가와 옆 번화가' },
 ];
 
+const TRIP_PLAN = [
+  {
+    id: 'arrival',
+    label: '도착일',
+    title: '고베공항 도착 · 난바 체크인',
+    summary: '공항 → 시내 이동 → 장어 점심 → 체크인 → 마구로마루 → 우메다 쇼핑 → 유카리 오코노미야끼 → 숙소 복귀',
+    route: ['고베공항', '난바', '장어', '체크인', '마구로마루', '우메다', '유카리', '숙소'],
+    steps: [
+      { time: '11:00', title: '고베공항 도착', note: '고베공항 도착 후 시내 이동 시작', target: { landmark: '난바역' } },
+      { time: '13:00', title: '우나기 장어 점심', note: '시내 이동 후 장어 점심', target: { place: 'うなぎ串焼きいづも難波' } },
+      { time: '15:00', title: '숙소 체크인', note: '짐 풀고 짧게 정리', target: { landmark: '난바역' } },
+      { time: '15:30', title: '마구로마루', note: '참치/해산물 쪽 간단 재방문 또는 추가 식사', target: { place: '마구로마루' } },
+      { time: '17:00', title: '우메다 쇼핑', note: '유니클로 / 지유 중심으로 우메다 쪽 쇼핑', target: { landmark: '오사카역' } },
+      { time: '19:00', title: '유카리 오코노미야끼', note: '저녁 고정', target: { place: '유카리 오코노미야끼 난바' } },
+      { time: '저녁 이후', title: '숙소 복귀', note: '난바 기준 귀환', target: { landmark: '난바역' } },
+    ],
+  },
+  {
+    id: 'sun',
+    label: '일요일',
+    title: '쿠로몬시장 아침 · 점심 라멘 · 오후 장보기',
+    summary: '쿠로몬시장 아침 → 나니와신풍라멘 오픈런 → 오후 도톤보리/일대 장보기(미정)',
+    route: ['쿠로몬시장', '나니와신풍라멘', '도톤보리', '장보기(미정)'],
+    steps: [
+      { time: '아침', title: '마구로야 쿠로긴 쿠로몬', note: '쿠로몬시장 안에서 아침', target: { landmark: '도톤보리' } },
+      { time: '12:00', title: '나니와신풍라멘 오픈런', note: '점심은 12시 오픈런', target: { place: '나니와 신풍라멘' } },
+      { time: '오후', title: '도톤보리 또는 그 일대 장보기', note: '일단 미정 · 장보기 중심으로 큰 그림만 확보', target: { landmark: '도톤보리' } },
+    ],
+  },
+  {
+    id: 'mon',
+    label: '월요일',
+    title: '오사카 아침 장어 · 교토 이동 · 카니도라쿠 저녁',
+    summary: '우오토요 장어덮밥 → 바로 교토 이동/관광 → 저녁 카니도라쿠',
+    route: ['쿠로몬시장', '교토 이동', '교토 놀기', '카니도라쿠'],
+    steps: [
+      { time: '아침', title: '우오토요 장어덮밥', note: '아침은 쿠로몬시장 장어덮밥', target: { place: '우오토요 (쿠로몬시장 할머니장어)' } },
+      { time: '오전~오후', title: '바로 교토 이동', note: '아침 먹고 바로 교토 가서 놀기', target: { landmark: '교토역' } },
+      { time: '오후', title: '교토 주요 지역 산책', note: '기온/교토역 일대 큰그림만', target: { landmark: '기온' } },
+      { time: '저녁', title: '카니도라쿠 게요리', note: '저녁 고정', target: { place: '카니도라쿠 (도톤보리 주변)' } },
+    ],
+  },
+  {
+    id: 'tue',
+    label: '화요일',
+    title: '화요일 일정 미정 · 19시 고정 일정',
+    summary: '낮 일정은 미정, 19시 일정만 고정',
+    route: ['낮 일정 미정', '19시 고정 일정'],
+    steps: [
+      { time: '낮', title: '미정', note: '추가 메모 넣으면 여기 숫자 순서대로 계속 붙여줄 수 있음', target: null },
+      { time: '19:00', title: '고정 일정', note: '현재는 시간만 확정', target: null },
+    ],
+  },
+];
+
 const FEATURED_PLACE_NAMES = new Set([
   '유카리 오코노미야끼 난바',
   'Ishimon',
@@ -47,6 +102,7 @@ const state = {
   userMarker: null,
   infoWindow: null,
   activePlace: null,
+  activeTripDayId: 'arrival',
   openPanelId: null,
 };
 
@@ -59,9 +115,11 @@ const menuDrawer = document.querySelector('#menuDrawer');
 const closeDrawer = document.querySelector('#closeDrawer');
 const panelButtons = [...document.querySelectorAll('[data-panel]')];
 const panelCloseButtons = [...document.querySelectorAll('[data-close-panel]')];
-const overlayPanels = ['filterPanel', 'listPanel', 'legendPanel'].map(id => document.getElementById(id));
+const overlayPanels = ['itineraryPanel', 'filterPanel', 'listPanel', 'legendPanel'].map(id => document.getElementById(id));
 const placeList = document.querySelector('#placeList');
 const resultMeta = document.querySelector('#resultMeta');
+const itineraryTabs = document.querySelector('#itineraryTabs');
+const itineraryContent = document.querySelector('#itineraryContent');
 const detailSheet = document.querySelector('#detailSheet');
 const detailContent = document.querySelector('#detailContent');
 const closeSheet = document.querySelector('#closeSheet');
@@ -103,6 +161,8 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
   populateCuisineFilter();
   bindEvents();
   renderLandmarks();
+  renderItineraryTabs();
+  renderItineraryContent();
   applyFilters();
 };
 
@@ -175,6 +235,83 @@ function closeDrawerPanelAndDetail({ keepDetail }) {
   closeMenuDrawer();
   closeAllPanels();
   if (!keepDetail) closeDetail();
+}
+
+function renderItineraryTabs() {
+  itineraryTabs.innerHTML = '';
+  TRIP_PLAN.forEach(day => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = `itinerary-tab ${state.activeTripDayId === day.id ? 'active' : ''}`.trim();
+    btn.textContent = day.label;
+    btn.addEventListener('click', () => selectTripDay(day.id));
+    itineraryTabs.appendChild(btn);
+  });
+}
+
+function selectTripDay(dayId) {
+  state.activeTripDayId = dayId;
+  renderItineraryTabs();
+  renderItineraryContent();
+  focusTripRoute(dayId);
+}
+
+function renderItineraryContent() {
+  const day = TRIP_PLAN.find(item => item.id === state.activeTripDayId) || TRIP_PLAN[0];
+  if (!day) return;
+  itineraryContent.innerHTML = `
+    <section class="itinerary-summary">
+      <h3>${escapeHtml(day.title)}</h3>
+      <p>${escapeHtml(day.summary)}</p>
+      <div class="route-chip-row">
+        ${day.route.map(label => `<span class="route-chip">${escapeHtml(label)}</span>`).join('')}
+      </div>
+    </section>
+    <section class="itinerary-list">
+      ${day.steps.map((step, index) => `
+        <article class="itinerary-item">
+          <div class="itinerary-num">${index + 1}</div>
+          <div>
+            <p class="itinerary-time">${escapeHtml(step.time)}</p>
+            <h3 class="itinerary-title">${escapeHtml(step.title)}</h3>
+            <p class="itinerary-note">${escapeHtml(step.note || '')}</p>
+            <div class="itinerary-meta">
+              ${step.target?.place ? `<span class="meta-chip">장소: ${escapeHtml(step.target.place)}</span>` : ''}
+              ${step.target?.landmark ? `<span class="meta-chip">기준점: ${escapeHtml(step.target.landmark)}</span>` : ''}
+            </div>
+          </div>
+        </article>
+      `).join('')}
+    </section>
+  `;
+}
+
+function focusTripRoute(dayId) {
+  if (!state.map) return;
+  const day = TRIP_PLAN.find(item => item.id === dayId);
+  if (!day) return;
+  const bounds = new google.maps.LatLngBounds();
+  let hasBounds = false;
+  day.steps.forEach(step => {
+    const point = resolveTripTarget(step.target);
+    if (!point) return;
+    bounds.extend(point);
+    hasBounds = true;
+  });
+  if (hasBounds) state.map.fitBounds(bounds, 72);
+}
+
+function resolveTripTarget(target) {
+  if (!target) return null;
+  if (target.place) {
+    const place = state.places.find(item => item.name === target.place);
+    if (place) return { lat: place.lat, lng: place.lon };
+  }
+  if (target.landmark) {
+    const spot = LANDMARKS.find(item => item.name === target.landmark);
+    if (spot) return { lat: spot.lat, lng: spot.lon };
+  }
+  return null;
 }
 
 function renderLandmarks() {
