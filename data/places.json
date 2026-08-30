@@ -740,5 +740,29 @@
     "google_maps_uri": "https://www.google.com/maps/search/?api=1&query=Rikimaru%20Namba%20Osaka",
     "matched_name": "리키마루 난바 주변",
     "menu_category": "와규/야키니쿠"
+  },
+  {
+    "id": 42,
+    "name": "카니도라쿠 (도톤보리 주변)",
+    "city": "Osaka",
+    "area": "Dotonbori",
+    "lat": 34.6688,
+    "lon": 135.5023,
+    "location_precision": "area",
+    "status": "active",
+    "cuisine": "crab / kaiseki / seafood",
+    "food_type": "게 요리 중심, 카이세키/해산물",
+    "rank": "",
+    "user_note": "카니도라쿠 추가 · 도톤보리 대표 지점 주변 area pin",
+    "source_url": "",
+    "maps_query": "카니도라쿠 도톤보리 Osaka Japan",
+    "google_match_status": "user_area_hint",
+    "google_candidate_name": "Kani Doraku Dotonbori area",
+    "google_candidate_address": "Dotonbori area, Chuo Ward, Osaka",
+    "google_candidate_score": 60.0,
+    "formatted_address": "Dotonbori area, Chuo Ward, Osaka",
+    "google_maps_uri": "https://www.google.com/maps/search/?api=1&query=Kani%20Doraku%20Dotonbori%20Osaka",
+    "matched_name": "카니도라쿠 도톤보리 주변",
+    "menu_category": "게/해산물"
   }
 ]
