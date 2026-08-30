@@ -716,5 +716,29 @@
     "google_maps_uri": "https://www.google.com/maps/place/%EC%9A%B0%EC%98%A4%ED%86%A0%EC%9A%94/@34.6645257,135.4886914,15z/data=!4m10!1m2!2m1!1z6buS6ZaA5biC5aC0IOOBhuOBquOBjiDjgYrjgbDjgYLjgaHjgoPjgpM!3m6!1s0x6000e741f86518a3:0x545322e7f6d6c331!8m2!3d34.6645257!4d135.5067158!15sCinpu5LploDluILloLQg44GG44Gq44GOIOOBiuOBsOOBguOBoeOCg-OCk1osIirpu5LploAg5biC5aC0IOOBhuOBquOBjiDjgYrjgbDjgYLjgaHjgoPjgpOSARB1bmFnaV9yZXN0YXVyYW50mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5UVVJCTW1KVE0yeFJSUkFC4AEA-gEECAsQEg!16s%2Fg%2F1tfr09wd?entry=ttu&g_ep=EgoyMDI2MDgyNi4wIKXMDSoASAFQAw%3D%3D",
     "google_place_id": "",
     "menu_category": "장어/우나기"
+  },
+  {
+    "id": 41,
+    "name": "리키마루 (난바 주변)",
+    "city": "Osaka",
+    "area": "Namba",
+    "lat": 34.667,
+    "lon": 135.5017,
+    "location_precision": "area",
+    "status": "active",
+    "cuisine": "yakiniku / buffet",
+    "food_type": "일본식 고기구이, 무한리필 야키니쿠",
+    "rank": "",
+    "user_note": "리키마루 추가 · 체인이라 난바 주변 기준 area pin",
+    "source_url": "",
+    "maps_query": "리키마루 난바 Osaka Japan",
+    "google_match_status": "user_area_hint",
+    "google_candidate_name": "Yakiniku Rikimaru Namba area",
+    "google_candidate_address": "Namba area, Chuo Ward, Osaka",
+    "google_candidate_score": 60.0,
+    "formatted_address": "Namba area, Chuo Ward, Osaka",
+    "google_maps_uri": "https://www.google.com/maps/search/?api=1&query=Rikimaru%20Namba%20Osaka",
+    "matched_name": "리키마루 난바 주변",
+    "menu_category": "와규/야키니쿠"
   }
 ]
