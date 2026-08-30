@@ -97,7 +97,7 @@ window.initGoogleFoodMap = async function initGoogleFoodMap() {
     closeDrawerPanelAndDetail({ keepDetail: false });
   });
 
-  const res = await fetch('./data/places.json?v=menu-highlight-1');
+  const res = await fetch('./data/places.json?v=rikimaru-1');
   state.places = await res.json();
   translateDataset();
   populateCuisineFilter();
